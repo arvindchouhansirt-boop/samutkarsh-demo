@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="hi" data-lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>हमारे बारे में | About Us — समुत्कर्ष संस्थान, भोपाल</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{'50':'#eff6ff','100':'#dbeafe','600':'#2563eb','700':'#1d4ed8','800':'#1e40af','900':'#1e3a8a','950':'#172554'},saffron:{'300':'#fcd34d','400':'#fbbf24','500':'#f59e0b','600':'#d97706'}}}}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/lang.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+<!-- TOP BAR -->
+<div class="bg-navy-950 text-gray-300 text-xs py-1.5 px-4 flex flex-col sm:flex-row justify-between items-center gap-1">
+  <span><span class="hi">संचालक: <strong class="text-saffron-400">विद्या भारती मध्य भारत प्रांत</strong> | भौराव देवरस सेवा न्यास, म.प्र.</span><span class="en">Managed by: <strong class="text-saffron-400">Vidya Bharati Madhya Bharat Prant</strong> | Bhaurao Deoras Seva Nyas, M.P.</span></span>
+  <span class="flex gap-4 flex-wrap justify-center">
+    <a href="tel:+918989229191" class="hover:text-saffron-400 transition-colors">📞 +91 89892 29191</a>
+    <a href="tel:07554922460"   class="hover:text-saffron-400 transition-colors">📞 0755-4922460</a>
+    <a href="mailto:samutkarshsansthan@gmail.com" class="hover:text-saffron-400 transition-colors">✉ samutkarshsansthan@gmail.com</a>
+  </span>
+</div>
+
+<!-- HEADER -->
+<header class="bg-navy-900 shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-saffron-500 flex items-center justify-center text-navy-900 font-black text-lg select-none">स</div>
+        <div>
+          <div class="text-white font-bold text-base leading-tight group-hover:text-saffron-400 transition-colors"><span class="hi">समुत्कर्ष संस्थान</span><span class="en">Samutkarsh Sansthan</span></div>
+          <div class="text-saffron-400 text-xs leading-tight">स्वर्गीय अर्चना शुक्ला स्मृति • भोपाल</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="index.html"      class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a>
+        <a href="about.html"      class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">हमारे बारे में</span><span class="en">About Us</span></a>
+        <a href="courses.html"    class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">पाठ्यक्रम</span><span class="en">Courses</span></a>
+        <a href="notices.html"    class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">सूचना पट्ट</span><span class="en">Notices</span></a>
+        <a href="admissions.html" class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">प्रवेश</span><span class="en">Admissions</span></a>
+        <a href="contact.html"    class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">संपर्क</span><span class="en">Contact</span></a>
+        <div class="ml-3 flex items-center bg-navy-950 rounded-lg p-0.5 gap-0.5">
+          <button onclick="setLang('hi')" data-lang="hi" class="lang-btn active-lang px-3 py-1.5 rounded-md text-xs font-semibold text-gray-300">हिंदी</button>
+          <button onclick="setLang('en')" data-lang="en" class="lang-btn px-3 py-1.5 rounded-md text-xs font-semibold text-gray-300">EN</button>
+        </div>
+        <a href="admissions.html" class="ml-2 px-4 py-2 bg-saffron-500 hover:bg-saffron-600 text-navy-950 font-bold text-sm rounded-lg transition-colors shadow-md"><span class="hi">निःशुल्क आवेदन →</span><span class="en">Apply Free →</span></a>
+      </nav>
+      <div class="flex items-center gap-2 md:hidden">
+        <div class="flex items-center bg-navy-950 rounded-lg p-0.5 gap-0.5">
+          <button onclick="setLang('hi')" data-lang="hi" class="lang-btn active-lang px-2 py-1 rounded-md text-xs font-semibold text-gray-300">हि</button>
+          <button onclick="setLang('en')" data-lang="en" class="lang-btn px-2 py-1 rounded-md text-xs font-semibold text-gray-300">EN</button>
+        </div>
+        <button id="nav-toggle" class="text-gray-200 hover:text-saffron-400 p-2">
+          <svg id="icon-open"  class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="md:hidden bg-navy-950 border-t border-navy-800">
+    <div class="px-4 py-3 space-y-1">
+      <a href="index.html"      class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a>
+      <a href="about.html"      class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">हमारे बारे में</span><span class="en">About Us</span></a>
+      <a href="courses.html"    class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">पाठ्यक्रम</span><span class="en">Courses</span></a>
+      <a href="notices.html"    class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">सूचना पट्ट</span><span class="en">Notices</span></a>
+      <a href="admissions.html" class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">प्रवेश</span><span class="en">Admissions</span></a>
+      <a href="contact.html"    class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">संपर्क</span><span class="en">Contact</span></a>
+      <a href="admissions.html" class="block mt-2 px-4 py-2 bg-saffron-500 text-navy-950 font-bold text-sm rounded-lg text-center"><span class="hi">निःशुल्क आवेदन →</span><span class="en">Apply Free →</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="bg-navy-900 py-14">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <span class="inline-block bg-saffron-500/20 text-saffron-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"><span class="hi">संस्था परिचय</span><span class="en">Institute Profile</span></span>
+    <h1 class="text-3xl sm:text-4xl font-black text-white mb-3"><span class="hi">हमारे बारे में</span><span class="en">About Us</span></h1>
+    <p class="text-gray-400 max-w-2xl mx-auto text-sm"><span class="hi">समुत्कर्ष संस्थान का मिशन, नेतृत्व, संगठनात्मक संरचना और हमारी यात्रा।</span><span class="en">Mission, leadership, organisational structure and the journey of Samutkarsh Sansthan.</span></p>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div class="reveal">
+        <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"><span class="hi">हमारा उद्देश्य</span><span class="en">Our Mission</span></span>
+        <h2 class="text-3xl font-black text-navy-900 mb-5 leading-tight">
+          <span class="hi">प्रतिभा और अवसर के बीच की खाई पाटना</span>
+          <span class="en">Bridging the Gap Between Talent &amp; Opportunity</span>
+        </h2>
+        <p class="text-gray-600 leading-relaxed mb-4">
+          <span class="hi">भारत में हजारों प्रतिभाशाली युवा आर्थिक अभावों के कारण उच्च प्रतियोगी परीक्षाओं की तैयारी से वंचित रह जाते हैं। समुत्कर्ष संस्थान इस अंतर को समाप्त करने का प्रयास है।</span>
+          <span class="en">Thousands of brilliant young minds across India are denied the chance to prepare for prestigious competitive exams — not for lack of merit, but lack of resources. Samutkarsh Sansthan exists to close this gap.</span>
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-8">
+          <span class="hi">हम योग्य छात्रों को संरचित कोचिंग, अध्ययन सामग्री, मॉक टेस्ट और वरिष्ठ अधिकारियों का मार्गदर्शन बिल्कुल मुफ्त उपलब्ध कराते हैं — ताकि हर योग्य छात्र समान अवसर पर प्रतिस्पर्धा कर सके।</span>
+          <span class="en">We provide structured coaching, study materials, mock tests and mentoring from senior bureaucrats — all at zero cost — so every deserving student from Bhopal can compete on equal footing.</span>
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-2 bg-navy-900/10 text-navy-900 rounded-full text-sm font-medium">🏛 <span class="hi">विशेषज्ञ शिक्षक</span><span class="en">Expert Faculty</span></span>
+          <span class="px-4 py-2 bg-saffron-500/15 text-saffron-600 rounded-full text-sm font-medium">📚 <span class="hi">निःशुल्क अध्ययन सामग्री</span><span class="en">Free Study Material</span></span>
+          <span class="px-4 py-2 bg-navy-900/10 text-navy-900 rounded-full text-sm font-medium">📝 <span class="hi">साप्ताहिक मॉक टेस्ट</span><span class="en">Weekly Mock Tests</span></span>
+          <span class="px-4 py-2 bg-saffron-500/15 text-saffron-600 rounded-full text-sm font-medium">🎤 <span class="hi">IAS/IPS संवाद</span><span class="en">IAS/IPS Guest Sessions</span></span>
+          <span class="px-4 py-2 bg-navy-900/10 text-navy-900 rounded-full text-sm font-medium">💻 <span class="hi">कम्प्यूटर लैब</span><span class="en">Computer Lab</span></span>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="bg-navy-900 rounded-3xl p-8 text-white">
+          <div class="text-saffron-400 text-5xl font-black mb-3">स</div>
+          <h3 class="text-2xl font-bold mb-4">समुत्कर्ष संस्थान</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-6">
+            <span class="hi">स्वर्गीय श्रीमती अर्चना शुक्ला की स्मृति में स्थापित यह संस्थान उन छात्रों के लिए आशा की किरण है जिनके पास मेधा है पर संसाधन नहीं।</span>
+            <span class="en">Founded in memory of Smt. Archana Shukla, this institution is a beacon of hope for students who have merit but lack resources.</span>
+          </p>
+          <div class="border-t border-white/20 pt-5 grid grid-cols-2 gap-4 text-sm">
+            <div><div class="text-saffron-400 font-semibold mb-0.5"><span class="hi">संचालक</span><span class="en">Managed By</span></div><div class="text-gray-300"><span class="hi">विद्या भारती म.भा. प्रांत</span><span class="en">Vidya Bharati M.B. Prant</span></div></div>
+            <div><div class="text-saffron-400 font-semibold mb-0.5"><span class="hi">स्थान</span><span class="en">Location</span></div><div class="text-gray-300"><span class="hi">हर्षवर्धन नगर, भोपाल</span><span class="en">Harshvardhan Nagar, Bhopal</span></div></div>
+            <div><div class="text-saffron-400 font-semibold mb-0.5"><span class="hi">प्रवेश शुल्क</span><span class="en">Admission Fee</span></div><div class="text-gray-300"><span class="hi">शून्य ₹0</span><span class="en">Absolutely ₹0</span></div></div>
+            <div><div class="text-saffron-400 font-semibold mb-0.5"><span class="hi">पहल का प्रकार</span><span class="en">Initiative Type</span></div><div class="text-gray-300"><span class="hi">पूर्व छात्र राष्ट्र निर्माण</span><span class="en">Alumni Nation-Building</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORGANISATIONAL HIERARCHY -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"><span class="hi">संगठनात्मक संरचना</span><span class="en">Organisational Structure</span></span>
+      <h2 class="text-3xl font-black text-navy-900 mb-3"><span class="hi">नेतृत्व एवं प्रबंधन</span><span class="en">Leadership &amp; Management</span></h2>
+      <p class="text-gray-500 text-sm max-w-2xl mx-auto"><span class="hi">संस्थान की आधिकारिक प्रशासनिक संरचना और प्रमुख पदाधिकारी।</span><span class="en">The official administrative hierarchy and key office-bearers of the institute.</span></p>
+    </div>
+
+    <!-- Hierarchy cards stacked -->
+    <div class="max-w-3xl mx-auto space-y-4">
+
+      <!-- Level 1 -->
+      <div class="bg-navy-900 text-white rounded-2xl p-6 reveal relative">
+        <div class="absolute -left-3 top-1/2 -translate-y-1/2 w-6 h-6 bg-saffron-500 rounded-full hidden md:flex items-center justify-center text-navy-900 font-black text-xs">1</div>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-saffron-500/20 flex items-center justify-center text-saffron-400 text-xl shrink-0">🏫</div>
+          <div>
+            <div class="text-saffron-400 text-xs font-bold uppercase tracking-widest mb-1"><span class="hi">मार्गदर्शक संस्था</span><span class="en">Parent Guidance Body</span></div>
+            <h3 class="text-lg font-black"><span class="hi">विद्या भारती मध्य भारत प्रांत</span><span class="en">Vidya Bharati Madhya Bharat Prant</span></h3>
+            <p class="text-gray-400 text-sm mt-1"><span class="hi">राष्ट्रीय स्तर पर विद्या भारती अखिल भारतीय शिक्षा संस्थान के अन्तर्गत प्रांतीय शाखा।</span><span class="en">Provincial branch under Vidya Bharati Akhil Bharatiya Shiksha Sansthan at national level.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center"><div class="w-0.5 h-6 bg-saffron-500/40"></div></div>
+
+      <!-- Level 2 -->
+      <div class="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm reveal">
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-navy-900/10 flex items-center justify-center text-navy-900 text-xl shrink-0">⚖️</div>
+          <div>
+            <div class="text-navy-900 text-xs font-bold uppercase tracking-widest mb-1"><span class="hi">संचालक न्यास</span><span class="en">Operating Trust</span></div>
+            <h3 class="text-lg font-black text-navy-900"><span class="hi">भौराव देवरस सेवा न्यास, मध्यप्रदेश</span><span class="en">Bhaurao Deoras Seva Nyas, Madhya Pradesh</span></h3>
+            <p class="text-gray-500 text-sm mt-1"><span class="hi">संस्थान का प्रत्यक्ष संचालन इसी न्यास द्वारा किया जाता है। यह एक "पूर्व छात्र" राष्ट्र-निर्माण परियोजना है।</span><span class="en">The institute is managed directly by this trust as a specialised "Purv Chhatra" (Alumni) national nation-building project.</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center"><div class="w-0.5 h-6 bg-saffron-500/40"></div></div>
+
+      <!-- Level 3: Key Patrons -->
+      <div class="grid sm:grid-cols-2 gap-4 reveal">
+        <div class="bg-white border border-saffron-500/30 rounded-2xl p-6 shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-full bg-saffron-500 flex items-center justify-center text-navy-900 font-black text-lg shrink-0">ब</div>
+            <div>
+              <div class="text-saffron-600 text-xs font-bold uppercase tracking-widest mb-1"><span class="hi">अध्यक्ष, भौराव देवरस सेवा न्यास</span><span class="en">President, Bhaurao Deoras Seva Nyas</span></div>
+              <h4 class="font-black text-navy-900 text-base">श्री बनवारी लाल सक्सेना</h4>
+              <p class="text-gray-500 text-xs mt-1"><span class="hi">न्यास के प्रमुख संरक्षक एवं प्रेरणास्रोत।</span><span class="en">Key patron and guiding force of the trust.</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white border border-navy-900/20 rounded-2xl p-6 shadow-sm">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-full bg-navy-900 flex items-center justify-center text-saffron-400 font-black text-lg shrink-0">नि</div>
+            <div>
+              <div class="text-navy-900 text-xs font-bold uppercase tracking-widest mb-1"><span class="hi">प्रांत संगठन मंत्री, विद्या भारती</span><span class="en">Prant Sanghatan Mantri, Vidya Bharati</span></div>
+              <h4 class="font-black text-navy-900 text-base">श्री निखिलेश माहेश्वरी</h4>
+              <p class="text-gray-500 text-xs mt-1"><span class="hi">संगठन के प्रांत स्तरीय समन्वयक।</span><span class="en">Provincial-level organisational coordinator.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MILESTONE / NEWSROOM -->
+<section class="py-16 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 reveal">
+      <span class="inline-block bg-red-500/10 text-red-600 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"><span class="hi">मील के पत्थर</span><span class="en">Milestones</span></span>
+      <h2 class="text-3xl font-black text-navy-900 mb-3"><span class="hi">ऐतिहासिक क्षण</span><span class="en">Historic Moments</span></h2>
+    </div>
+
+    <!-- Milestone 1: Governor Inauguration -->
+    <div class="bg-gradient-to-br from-navy-900 to-navy-950 rounded-3xl p-8 md:p-12 mb-8 reveal">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <span class="inline-block bg-saffron-500/20 text-saffron-400 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-wide"><span class="hi">उद्घाटन समारोह</span><span class="en">Inaugural Ceremony</span></span>
+          <h3 class="text-2xl font-black text-white mb-4">
+            <span class="hi">माननीय राज्यपाल श्री मंगुभाई पटेल द्वारा शुभारंभ</span>
+            <span class="en">Inaugurated by Hon'ble Governor Shri Mangubhai Patel</span>
+          </h3>
+          <p class="text-gray-300 leading-relaxed mb-4 text-sm">
+            <span class="hi">समुत्कर्ष संस्थान के प्रथम सत्र का भव्य उद्घाटन <strong class="text-saffron-400">प्रज्ञादीप परिसर, हर्षवर्धन नगर, भोपाल</strong> में सम्पन्न हुआ। कार्यक्रम में मध्यप्रदेश के माननीय राज्यपाल श्री मंगुभाई पटेल ने मुख्य अतिथि के रूप में संस्थान का शुभारंभ किया।</span>
+            <span class="en">The grand inaugural session of Samutkarsh Sansthan was held at the <strong class="text-saffron-400">Pragyadeep Campus, Harshvardhan Nagar, Bhopal</strong>. The Hon'ble Governor of Madhya Pradesh, Shri Mangubhai Patel, inaugurated the institute as the Chief Guest.</span>
+          </p>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            <span class="hi">इस ऐतिहासिक अवसर पर कार्यक्रम की अध्यक्षता <strong class="text-saffron-300">डॉ. रवींद्र कान्हेरे</strong>, राष्ट्रीय अध्यक्ष, विद्या भारती अखिल भारतीय शिक्षा संस्थान ने की।</span>
+            <span class="en">On this historic occasion, the programme was presided over by <strong class="text-saffron-300">Dr. Ravindra Kanhere</strong>, National President, Vidya Bharati Akhil Bharatiya Shiksha Sansthan.</span>
+          </p>
+        </div>
+        <div class="space-y-4">
+          <div class="bg-white/10 rounded-2xl p-5 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-saffron-500 flex items-center justify-center text-navy-950 font-black text-xs shrink-0"><span class="hi">मु.अ.</span><span class="en">CG</span></div>
+            <div>
+              <div class="text-saffron-400 text-xs font-bold uppercase mb-1"><span class="hi">मुख्य अतिथि</span><span class="en">Chief Guest</span></div>
+              <div class="text-white font-bold">श्री मंगुभाई पटेल</div>
+              <div class="text-gray-400 text-xs"><span class="hi">माननीय राज्यपाल, मध्यप्रदेश</span><span class="en">Hon'ble Governor, Madhya Pradesh</span></div>
+            </div>
+          </div>
+          <div class="bg-white/10 rounded-2xl p-5 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-navy-700 flex items-center justify-center text-saffron-400 font-black text-xs shrink-0"><span class="hi">अ.</span><span class="en">P</span></div>
+            <div>
+              <div class="text-saffron-400 text-xs font-bold uppercase mb-1"><span class="hi">कार्यक्रम अध्यक्ष</span><span class="en">Presiding</span></div>
+              <div class="text-white font-bold">डॉ. रवींद्र कान्हेरे</div>
+              <div class="text-gray-400 text-xs"><span class="hi">राष्ट्रीय अध्यक्ष, विद्या भारती</span><span class="en">National President, Vidya Bharati</span></div>
+            </div>
+          </div>
+          <div class="bg-white/10 rounded-2xl p-5 flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-navy-700 flex items-center justify-center text-saffron-400 font-black text-xs shrink-0">📍</div>
+            <div>
+              <div class="text-saffron-400 text-xs font-bold uppercase mb-1"><span class="hi">उद्घाटन स्थल</span><span class="en">Venue</span></div>
+              <div class="text-white font-bold"><span class="hi">प्रज्ञादीप परिसर, भोपाल</span><span class="en">Pragyadeep Campus, Bhopal</span></div>
+              <div class="text-gray-400 text-xs"><span class="hi">हर्षवर्धन नगर, भोपाल (म.प्र.)</span><span class="en">Harshvardhan Nagar, Bhopal (M.P.)</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- More milestones timeline -->
+    <div class="max-w-2xl mx-auto">
+      <h3 class="text-xl font-black text-navy-900 mb-6 reveal"><span class="hi">संस्थान की यात्रा</span><span class="en">Institute Journey</span></h3>
+      <div class="relative border-l-2 border-navy-900/20 ml-4 space-y-8">
+        <div class="relative pl-8 reveal">
+          <div class="absolute -left-3 top-1 w-5 h-5 bg-saffron-500 rounded-full border-2 border-white"></div>
+          <div class="text-xs font-bold text-saffron-600 mb-1">2024</div>
+          <h4 class="font-bold text-navy-900 mb-1"><span class="hi">संस्थान की स्थापना</span><span class="en">Foundation of the Institute</span></h4>
+          <p class="text-gray-500 text-sm"><span class="hi">स्वर्गीय श्रीमती अर्चना शुक्ला की स्मृति में समुत्कर्ष संस्थान की स्थापना, भौराव देवरस सेवा न्यास द्वारा संचालित।</span><span class="en">Samutkarsh Sansthan established in memory of Smt. Archana Shukla, operated by Bhaurao Deoras Seva Nyas.</span></p>
+        </div>
+        <div class="relative pl-8 reveal">
+          <div class="absolute -left-3 top-1 w-5 h-5 bg-navy-900 rounded-full border-2 border-white"></div>
+          <div class="text-xs font-bold text-saffron-600 mb-1"><span class="hi">प्रथम सत्र</span><span class="en">First Session</span></div>
+          <h4 class="font-bold text-navy-900 mb-1"><span class="hi">माननीय राज्यपाल द्वारा उद्घाटन</span><span class="en">Inauguration by Hon'ble Governor</span></h4>
+          <p class="text-gray-500 text-sm"><span class="hi">म.प्र. के राज्यपाल श्री मंगुभाई पटेल ने प्रज्ञादीप परिसर में संस्थान का शुभारंभ किया। दो बैच — 50+50 सीटें।</span><span class="en">Governor Shri Mangubhai Patel inaugurated the institute at Pragyadeep Campus. Two batches — 50+50 seats.</span></p>
+        </div>
+        <div class="relative pl-8 reveal">
+          <div class="absolute -left-3 top-1 w-5 h-5 bg-saffron-500 rounded-full border-2 border-white"></div>
+          <div class="text-xs font-bold text-saffron-600 mb-1">2026–27</div>
+          <h4 class="font-bold text-navy-900 mb-1"><span class="hi">नए सत्र हेतु प्रवेश प्रारंभ</span><span class="en">Admissions Open for New Session</span></h4>
+          <p class="text-gray-500 text-sm"><span class="hi">सत्र 2026–27 के लिए प्रवेश परीक्षा एवं दस्तावेज सत्यापन के आधार पर 50-50 सीटों पर प्रवेश।</span><span class="en">50+50 seats for session 2026–27 filled via state-level entrance exam &amp; document verification.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy-950 text-gray-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid md:grid-cols-3 gap-10 mb-8">
+      <div>
+        <div class="flex items-center gap-3 mb-3"><div class="w-9 h-9 rounded-full bg-saffron-500 flex items-center justify-center text-navy-900 font-black">स</div><div class="text-white font-bold text-sm"><span class="hi">समुत्कर्ष संस्थान, भोपाल</span><span class="en">Samutkarsh Sansthan, Bhopal</span></div></div>
+        <p class="text-xs leading-relaxed"><span class="hi">विद्या भारती मध्य भारत प्रांत | भौराव देवरस सेवा न्यास, म.प्र.</span><span class="en">Vidya Bharati Madhya Bharat Prant | Bhaurao Deoras Seva Nyas, M.P.</span></p>
+      </div>
+      <div>
+        <h5 class="text-white font-bold text-xs uppercase tracking-widest mb-3"><span class="hi">पृष्ठ</span><span class="en">Pages</span></h5>
+        <ul class="space-y-1.5 text-xs">
+          <li><a href="index.html"      class="hover:text-saffron-400 transition-colors"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a></li>
+          <li><a href="about.html"      class="hover:text-saffron-400 transition-colors"><span class="hi">हमारे बारे में</span><span class="en">About Us</span></a></li>
+          <li><a href="courses.html"    class="hover:text-saffron-400 transition-colors"><span class="hi">पाठ्यक्रम</span><span class="en">Courses</span></a></li>
+          <li><a href="notices.html"    class="hover:text-saffron-400 transition-colors"><span class="hi">सूचना पट्ट</span><span class="en">Notice Board</span></a></li>
+          <li><a href="admissions.html" class="hover:text-saffron-400 transition-colors"><span class="hi">प्रवेश</span><span class="en">Admissions</span></a></li>
+          <li><a href="contact.html"    class="hover:text-saffron-400 transition-colors"><span class="hi">संपर्क</span><span class="en">Contact</span></a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="text-white font-bold text-xs uppercase tracking-widest mb-3"><span class="hi">संपर्क</span><span class="en">Contact</span></h5>
+        <ul class="space-y-2 text-xs">
+          <li class="flex gap-2"><span>📍</span><span><span class="hi">प्रज्ञादीप, हर्षवर्धन नगर, भोपाल (म.प्र.)</span><span class="en">Pragyadeep, Harshvardhan Nagar, Bhopal (M.P.)</span></span></li>
+          <li><a href="tel:+918989229191" class="hover:text-saffron-400">📞 +91 89892 29191</a></li>
+          <li><a href="tel:07554922460"   class="hover:text-saffron-400">📞 0755-4922460</a></li>
+          <li><a href="mailto:samutkarshsansthan@gmail.com" class="hover:text-saffron-400 break-all">✉ samutkarshsansthan@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10 pt-5 text-xs text-center text-gray-600">© 2026 समुत्कर्ष संस्थान, भोपाल | <span class="hi">प्रवेश पूर्णतः निःशुल्क।</span><span class="en">Admission is completely free.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

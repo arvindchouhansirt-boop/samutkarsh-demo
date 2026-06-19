@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="hi" data-lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>सूचना पट्ट | Notice Board — समुत्कर्ष संस्थान, भोपाल</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{'50':'#eff6ff','100':'#dbeafe','600':'#2563eb','700':'#1d4ed8','800':'#1e40af','900':'#1e3a8a','950':'#172554'},saffron:{'300':'#fcd34d','400':'#fbbf24','500':'#f59e0b','600':'#d97706'}}}}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/lang.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+<!-- TOP BAR -->
+<div class="bg-navy-950 text-gray-300 text-xs py-1.5 px-4 flex flex-col sm:flex-row justify-between items-center gap-1">
+  <span><span class="hi">संचालक: <strong class="text-saffron-400">विद्या भारती मध्य भारत प्रांत</strong> | भौराव देवरस सेवा न्यास, म.प्र.</span><span class="en">Managed by: <strong class="text-saffron-400">Vidya Bharati Madhya Bharat Prant</strong> | Bhaurao Deoras Seva Nyas, M.P.</span></span>
+  <span class="flex gap-4 flex-wrap justify-center">
+    <a href="tel:+918989229191" class="hover:text-saffron-400 transition-colors">📞 +91 89892 29191</a>
+    <a href="tel:07554922460"   class="hover:text-saffron-400 transition-colors">📞 0755-4922460</a>
+    <a href="mailto:samutkarshsansthan@gmail.com" class="hover:text-saffron-400 transition-colors">✉ samutkarshsansthan@gmail.com</a>
+  </span>
+</div>
+
+<!-- HEADER -->
+<header class="bg-navy-900 shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-saffron-500 flex items-center justify-center text-navy-900 font-black text-lg select-none">स</div>
+        <div>
+          <div class="text-white font-bold text-base leading-tight group-hover:text-saffron-400 transition-colors"><span class="hi">समुत्कर्ष संस्थान</span><span class="en">Samutkarsh Sansthan</span></div>
+          <div class="text-saffron-400 text-xs leading-tight">स्वर्गीय अर्चना शुक्ला स्मृति • भोपाल</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="index.html"      class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a>
+        <a href="about.html"      class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">हमारे बारे में</span><span class="en">About Us</span></a>
+        <a href="courses.html"    class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">पाठ्यक्रम</span><span class="en">Courses</span></a>
+        <a href="notices.html"    class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">सूचना पट्ट</span><span class="en">Notices</span></a>
+        <a href="admissions.html" class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">प्रवेश</span><span class="en">Admissions</span></a>
+        <a href="contact.html"    class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">संपर्क</span><span class="en">Contact</span></a>
+        <div class="ml-3 flex items-center bg-navy-950 rounded-lg p-0.5 gap-0.5">
+          <button onclick="setLang('hi')" data-lang="hi" class="lang-btn active-lang px-3 py-1.5 rounded-md text-xs font-semibold text-gray-300">हिंदी</button>
+          <button onclick="setLang('en')" data-lang="en" class="lang-btn px-3 py-1.5 rounded-md text-xs font-semibold text-gray-300">EN</button>
+        </div>
+        <a href="admissions.html" class="ml-2 px-4 py-2 bg-saffron-500 hover:bg-saffron-600 text-navy-950 font-bold text-sm rounded-lg transition-colors shadow-md"><span class="hi">निःशुल्क आवेदन →</span><span class="en">Apply Free →</span></a>
+      </nav>
+      <div class="flex items-center gap-2 md:hidden">
+        <div class="flex items-center bg-navy-950 rounded-lg p-0.5 gap-0.5">
+          <button onclick="setLang('hi')" data-lang="hi" class="lang-btn active-lang px-2 py-1 rounded-md text-xs font-semibold text-gray-300">हि</button>
+          <button onclick="setLang('en')" data-lang="en" class="lang-btn px-2 py-1 rounded-md text-xs font-semibold text-gray-300">EN</button>
+        </div>
+        <button id="nav-toggle" class="text-gray-200 hover:text-saffron-400 p-2">
+          <svg id="icon-open"  class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="md:hidden bg-navy-950 border-t border-navy-800">
+    <div class="px-4 py-3 space-y-1">
+      <a href="index.html"      class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a>
+      <a href="about.html"      class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">हमारे बारे में</span><span class="en">About Us</span></a>
+      <a href="courses.html"    class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">पाठ्यक्रम</span><span class="en">Courses</span></a>
+      <a href="notices.html"    class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">सूचना पट्ट</span><span class="en">Notices</span></a>
+      <a href="admissions.html" class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">प्रवेश</span><span class="en">Admissions</span></a>
+      <a href="contact.html"    class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">संपर्क</span><span class="en">Contact</span></a>
+      <a href="admissions.html" class="block mt-2 px-4 py-2 bg-saffron-500 text-navy-950 font-bold text-sm rounded-lg text-center"><span class="hi">निःशुल्क आवेदन →</span><span class="en">Apply Free →</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="bg-navy-900 py-14">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div>
+        <span class="inline-block bg-red-500/20 text-red-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"><span class="hi">नवीनतम सूचनाएँ</span><span class="en">Latest Updates</span></span>
+        <h1 class="text-3xl sm:text-4xl font-black text-white mb-2"><span class="hi">सूचना पट्ट</span><span class="en">Notice Board</span></h1>
+        <p class="text-gray-400 text-sm"><span class="hi">नवीनतम परिपत्र, परीक्षा कार्यक्रम एवं संस्थान की सूचनाएँ।</span><span class="en">Latest circulars, exam schedules and institute announcements.</span></p>
+      </div>
+      <div class="flex items-center gap-2 bg-red-500/20 border border-red-500/30 rounded-xl px-4 py-2 shrink-0">
+        <span class="w-2 h-2 bg-red-400 rounded-full animate-pulse inline-block"></span>
+        <span class="text-red-300 text-xs font-semibold"><span class="hi">प्रतिदिन अद्यतन</span><span class="en">Updated Daily</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="bg-saffron-500 overflow-hidden py-2 flex items-center">
+  <span class="shrink-0 bg-navy-900 text-saffron-400 font-bold text-xs px-4 py-1 uppercase tracking-widest mr-3 rounded-r-full"><span class="hi">ताजा</span><span class="en">Live</span></span>
+  <div class="overflow-hidden flex-1">
+    <span class="ticker-track text-navy-950 font-semibold text-sm">
+      🔔 <span class="hi">सत्र 2026–27 हेतु प्रवेश प्रारंभ</span><span class="en">Admissions Open for Session 2026–27</span> &nbsp;|&nbsp;
+      🔔 <span class="hi">प्रवेश परीक्षा तिथि शीघ्र घोषित की जाएगी</span><span class="en">Entrance Exam Date to be announced soon</span> &nbsp;|&nbsp;
+      🔔 <span class="hi">IAS अधिकारी संवाद — 28 जून 2026</span><span class="en">IAS Officer Session — 28 June 2026</span> &nbsp;|&nbsp;
+      🔔 <span class="hi">मॉक टेस्ट सीरीज — 1 जुलाई 2026 से</span><span class="en">Mock Test Series from 1 July 2026</span> &nbsp;|&nbsp;
+    </span>
+  </div>
+</div>
+
+<!-- FILTER TABS -->
+<div class="bg-white border-b border-gray-100 sticky top-16 z-40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex gap-1 py-3 overflow-x-auto">
+      <button onclick="filterNotices('all')"     id="tab-all"     class="notice-tab active-tab shrink-0 px-4 py-2 rounded-lg text-sm font-semibold transition-colors bg-navy-900 text-white"><span class="hi">सभी</span><span class="en">All</span></button>
+      <button onclick="filterNotices('admission')" id="tab-admission" class="notice-tab shrink-0 px-4 py-2 rounded-lg text-sm font-semibold transition-colors text-gray-500 hover:bg-gray-100"><span class="hi">प्रवेश</span><span class="en">Admission</span></button>
+      <button onclick="filterNotices('event')"   id="tab-event"   class="notice-tab shrink-0 px-4 py-2 rounded-lg text-sm font-semibold transition-colors text-gray-500 hover:bg-gray-100"><span class="hi">कार्यक्रम</span><span class="en">Events</span></button>
+      <button onclick="filterNotices('exam')"    id="tab-exam"    class="notice-tab shrink-0 px-4 py-2 rounded-lg text-sm font-semibold transition-colors text-gray-500 hover:bg-gray-100"><span class="hi">परीक्षा</span><span class="en">Exams</span></button>
+      <button onclick="filterNotices('result')"  id="tab-result"  class="notice-tab shrink-0 px-4 py-2 rounded-lg text-sm font-semibold transition-colors text-gray-500 hover:bg-gray-100"><span class="hi">परिणाम</span><span class="en">Results</span></button>
+    </div>
+  </div>
+</div>
+
+<!-- NOTICES LIST -->
+<section class="py-10 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div id="notices-list" class="space-y-4">
+
+      <!-- Notice 1 -->
+      <div class="notice-item" data-category="admission">
+        <div class="bg-white border border-gray-100 rounded-2xl p-5 flex flex-col sm:flex-row gap-4 items-start card-hover reveal">
+          <div class="shrink-0 text-center bg-navy-900 text-white rounded-xl px-4 py-3 min-w-[68px]">
+            <div class="text-saffron-400 text-xs font-semibold uppercase"><span class="hi">जून</span><span class="en">Jun</span></div>
+            <div class="text-2xl font-black leading-none">19</div>
+            <div class="text-gray-400 text-xs">2026</div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap gap-2 mb-2">
+              <span class="inline-block bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full"><span class="hi">नया</span><span class="en">New</span></span>
+              <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-medium px-2 py-0.5 rounded-full">UPSC / MPPSC</span>
+              <span class="inline-block bg-green-100 text-green-700 text-xs font-medium px-2 py-0.5 rounded-full"><span class="hi">प्रवेश</span><span class="en">Admission</span></span>
+            </div>
+            <h3 class="font-bold text-navy-900 text-base mb-1.5">
+              <span class="hi">प्रवेश सूचना: सिविल सेवा बैच 2026–27</span>
+              <span class="en">Admission Notice: Civil Services Batch 2026–27</span>
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              <span class="hi">वार्षिक सिविल सेवा विशेष बैच हेतु आवेदन प्रारंभ। EWS वर्ग एवं मेधावी छात्रों को विशेष प्रोत्साहन। अंतिम तिथि: 30 जून 2026। प्रवेश राज्य स्तरीय परीक्षा एवं दस्तावेज सत्यापन के आधार पर।</span>
+              <span class="en">Applications open for Annual Civil Services Specialisation Batch. EWS category &amp; merit holders especially encouraged. Last date: 30 June 2026. Admission via state-level exam &amp; document verification.</span>
+            </p>
+          </div>
+          <div class="shrink-0 self-center">
+            <a href="#" class="inline-flex items-center gap-2 px-4 py-2.5 bg-navy-900 hover:bg-navy-800 text-white text-xs font-bold rounded-xl transition-colors whitespace-nowrap shadow-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span class="hi">PDF परिपत्र डाउनलोड करें</span><span class="en">Download Official PDF Circular</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notice 2 -->
+      <div class="notice-item" data-category="admission">
+        <div class="bg-white border border-gray-100 rounded-2xl p-5 flex flex-col sm:flex-row gap-4 items-start card-hover reveal">
+          <div class="shrink-0 text-center bg-saffron-500 text-navy-950 rounded-xl px-4 py-3 min-w-[68px]">
+            <div class="text-navy-900 text-xs font-semibold uppercase"><span class="hi">जून</span><span class="en">Jun</span></div>
+            <div class="text-2xl font-black leading-none">19</div>
+            <div class="text-navy-700 text-xs">2026</div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap gap-2 mb-2">
+              <span class="inline-block bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full"><span class="hi">नया</span><span class="en">New</span></span>
+              <span class="inline-block bg-saffron-500/20 text-saffron-600 text-xs font-medium px-2 py-0.5 rounded-full"><span class="hi">बैंकिंग · SSC · पुलिस</span><span class="en">Banking · SSC · Police</span></span>
+              <span class="inline-block bg-green-100 text-green-700 text-xs font-medium px-2 py-0.5 rounded-full"><span class="hi">प्रवेश</span><span class="en">Admission</span></span>
+            </div>
+            <h3 class="font-bold text-navy-900 text-base mb-1.5">
+              <span class="hi">प्रवेश सूचना: एक दिवसीय परीक्षा बैच 2026–27</span>
+              <span class="en">Admission Notice: One-Day Exams Batch 2026–27</span>
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              <span class="hi">IBPS, SBI, SSC, म.प्र. पुलिस एवं पटवारी परीक्षाओं हेतु 50 सीटें उपलब्ध। पूर्णतः निःशुल्क कोचिंग। संस्थान में वॉक-इन पंजीयन स्वीकार किया जाएगा।</span>
+              <span class="en">50 seats available for students targeting IBPS, SBI, SSC, MP Police &amp; Patwari exams. Completely free coaching. Walk-in registration accepted at the institute.</span>
+            </p>
+          </div>
+          <div class="shrink-0 self-center">
+            <a href="#" class="inline-flex items-center gap-2 px-4 py-2.5 bg-navy-900 hover:bg-navy-800 text-white text-xs font-bold rounded-xl transition-colors whitespace-nowrap shadow-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span class="hi">PDF परिपत्र डाउनलोड करें</span><span class="en">Download Official PDF Circular</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notice 3 -->
+      <div class="notice-item" data-category="event">
+        <div class="bg-white border border-gray-100 rounded-2xl p-5 flex flex-col sm:flex-row gap-4 items-start card-hover reveal">
+          <div class="shrink-0 text-center bg-navy-900 text-white rounded-xl px-4 py-3 min-w-[68px]">
+            <div class="text-saffron-400 text-xs font-semibold uppercase"><span class="hi">जून</span><span class="en">Jun</span></div>
+            <div class="text-2xl font-black leading-none">28</div>
+            <div class="text-gray-400 text-xs">2026</div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap gap-2 mb-2">
+              <span class="inline-block bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded-full"><span class="hi">कार्यक्रम</span><span class="en">Event</span></span>
+              <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-medium px-2 py-0.5 rounded-full"><span class="hi">अतिथि व्याख्यान</span><span class="en">Guest Lecture</span></span>
+            </div>
+            <h3 class="font-bold text-navy-900 text-base mb-1.5">
+              <span class="hi">वरिष्ठ IAS अधिकारी के साथ संवाद सत्र — 28 जून 2026</span>
+              <span class="en">Interactive Session with Senior IAS Officer — 28 June 2026</span>
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              <span class="hi">28 जून 2026 को प्रातः 10:00 बजे संस्थान में एक वरिष्ठ IAS अधिकारी के साथ विशेष प्रश्नोत्तर एवं प्रेरणा सत्र आयोजित किया जाएगा। सभी नामांकित छात्रों की उपस्थिति अनिवार्य है।</span>
+              <span class="en">An exclusive Q&amp;A and motivational session with a senior IAS officer will be held on 28 June 2026 at 10:00 AM. Attendance is mandatory for all enrolled students.</span>
+            </p>
+          </div>
+          <div class="shrink-0 self-center">
+            <a href="#" class="inline-flex items-center gap-2 px-4 py-2.5 bg-navy-900 hover:bg-navy-800 text-white text-xs font-bold rounded-xl transition-colors whitespace-nowrap shadow-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span class="hi">PDF परिपत्र डाउनलोड करें</span><span class="en">Download Official PDF Circular</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notice 4 -->
+      <div class="notice-item" data-category="exam">
+        <div class="bg-white border border-gray-100 rounded-2xl p-5 flex flex-col sm:flex-row gap-4 items-start card-hover reveal">
+          <div class="shrink-0 text-center bg-navy-900 text-white rounded-xl px-4 py-3 min-w-[68px]">
+            <div class="text-saffron-400 text-xs font-semibold uppercase"><span class="hi">जुलाई</span><span class="en">Jul</span></div>
+            <div class="text-2xl font-black leading-none">01</div>
+            <div class="text-gray-400 text-xs">2026</div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap gap-2 mb-2">
+              <span class="inline-block bg-blue-500 text-white text-xs font-bold px-2 py-0.5 rounded-full"><span class="hi">परीक्षा</span><span class="en">Exam</span></span>
+              <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-medium px-2 py-0.5 rounded-full"><span class="hi">मॉक टेस्ट</span><span class="en">Mock Test</span></span>
+            </div>
+            <h3 class="font-bold text-navy-900 text-base mb-1.5">
+              <span class="hi">साप्ताहिक मॉक टेस्ट सीरीज — 1 जुलाई 2026 से प्रारंभ</span>
+              <span class="en">Weekly Mock Test Series Commencing 1 July 2026</span>
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              <span class="hi">सत्र 2026–27 की प्रथम मॉक परीक्षा 1 जुलाई 2026 को आयोजित की जाएगी। छात्र 25 जून तक पंजीयन सुनिश्चित करें। विस्तृत पाठ्यक्रम एवं परीक्षा पैटर्न परिपत्र संलग्न है।</span>
+              <span class="en">The first mock test of session 2026–27 will be conducted on 1 July 2026. Students must register by 25 June. Detailed syllabus &amp; pattern notice attached.</span>
+            </p>
+          </div>
+          <div class="shrink-0 self-center">
+            <a href="#" class="inline-flex items-center gap-2 px-4 py-2.5 bg-navy-900 hover:bg-navy-800 text-white text-xs font-bold rounded-xl transition-colors whitespace-nowrap shadow-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span class="hi">PDF परिपत्र डाउनलोड करें</span><span class="en">Download Official PDF Circular</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notice 5 -->
+      <div class="notice-item" data-category="exam">
+        <div class="bg-white border border-gray-100 rounded-2xl p-5 flex flex-col sm:flex-row gap-4 items-start card-hover reveal">
+          <div class="shrink-0 text-center bg-navy-900 text-white rounded-xl px-4 py-3 min-w-[68px]">
+            <div class="text-saffron-400 text-xs font-semibold uppercase"><span class="hi">जुलाई</span><span class="en">Jul</span></div>
+            <div class="text-2xl font-black leading-none">15</div>
+            <div class="text-gray-400 text-xs">2026</div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap gap-2 mb-2">
+              <span class="inline-block bg-purple-500 text-white text-xs font-bold px-2 py-0.5 rounded-full"><span class="hi">प्रवेश परीक्षा</span><span class="en">Entrance Exam</span></span>
+            </div>
+            <h3 class="font-bold text-navy-900 text-base mb-1.5">
+              <span class="hi">राज्य स्तरीय प्रवेश परीक्षा — 15 जुलाई 2026</span>
+              <span class="en">State-Level Entrance Examination — 15 July 2026</span>
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              <span class="hi">दोनों बैचों हेतु राज्य स्तरीय प्रवेश परीक्षा 15 जुलाई 2026 को प्रज्ञादीप परिसर में आयोजित की जाएगी। परीक्षा प्रवेश पत्र 10 जुलाई से उपलब्ध होगा।</span>
+              <span class="en">State-Level Entrance Exam for both batches will be held on 15 July 2026 at Pragyadeep Campus. Admit cards available from 10 July onwards.</span>
+            </p>
+          </div>
+          <div class="shrink-0 self-center">
+            <a href="#" class="inline-flex items-center gap-2 px-4 py-2.5 bg-navy-900 hover:bg-navy-800 text-white text-xs font-bold rounded-xl transition-colors whitespace-nowrap shadow-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span class="hi">PDF परिपत्र डाउनलोड करें</span><span class="en">Download Official PDF Circular</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notice 6 -->
+      <div class="notice-item" data-category="event">
+        <div class="bg-white border border-gray-100 rounded-2xl p-5 flex flex-col sm:flex-row gap-4 items-start card-hover reveal">
+          <div class="shrink-0 text-center bg-navy-900 text-white rounded-xl px-4 py-3 min-w-[68px]">
+            <div class="text-saffron-400 text-xs font-semibold uppercase"><span class="hi">अग.</span><span class="en">Aug</span></div>
+            <div class="text-2xl font-black leading-none">03</div>
+            <div class="text-gray-400 text-xs">2026</div>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex flex-wrap gap-2 mb-2">
+              <span class="inline-block bg-orange-500 text-white text-xs font-bold px-2 py-0.5 rounded-full"><span class="hi">कार्यक्रम</span><span class="en">Event</span></span>
+              <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-medium px-2 py-0.5 rounded-full"><span class="hi">विशेष व्याख्यान</span><span class="en">Special Lecture</span></span>
+            </div>
+            <h3 class="font-bold text-navy-900 text-base mb-1.5">
+              <span class="hi">IPS अधिकारी द्वारा करियर परामर्श सत्र — 3 अगस्त 2026</span>
+              <span class="en">Career Guidance Session by IPS Officer — 3 August 2026</span>
+            </h3>
+            <p class="text-gray-500 text-sm leading-relaxed">
+              <span class="hi">एक वरिष्ठ IPS अधिकारी द्वारा पुलिस सेवा, तैयारी रणनीति एवं व्यक्तित्व विकास पर विशेष व्याख्यान।</span>
+              <span class="en">A senior IPS officer will deliver a special lecture on police services, preparation strategy &amp; personality development.</span>
+            </p>
+          </div>
+          <div class="shrink-0 self-center">
+            <a href="#" class="inline-flex items-center gap-2 px-4 py-2.5 bg-navy-900 hover:bg-navy-800 text-white text-xs font-bold rounded-xl transition-colors whitespace-nowrap shadow-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+              <span class="hi">PDF परिपत्र डाउनलोड करें</span><span class="en">Download Official PDF Circular</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /notices-list -->
+
+    <!-- Empty state (shown when filter has no results) -->
+    <div id="no-notices" class="hidden text-center py-16">
+      <div class="text-5xl mb-4">📋</div>
+      <p class="text-gray-500 font-medium"><span class="hi">इस श्रेणी में अभी कोई सूचना नहीं है।</span><span class="en">No notices in this category yet.</span></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy-950 text-gray-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid md:grid-cols-3 gap-10 mb-8">
+      <div><div class="flex items-center gap-3 mb-3"><div class="w-9 h-9 rounded-full bg-saffron-500 flex items-center justify-center text-navy-900 font-black">स</div><div class="text-white font-bold text-sm"><span class="hi">समुत्कर्ष संस्थान, भोपाल</span><span class="en">Samutkarsh Sansthan, Bhopal</span></div></div><p class="text-xs leading-relaxed"><span class="hi">विद्या भारती मध्य भारत प्रांत | भौराव देवरस सेवा न्यास, म.प्र.</span><span class="en">Vidya Bharati Madhya Bharat Prant | Bhaurao Deoras Seva Nyas, M.P.</span></p></div>
+      <div><h5 class="text-white font-bold text-xs uppercase tracking-widest mb-3"><span class="hi">पृष्ठ</span><span class="en">Pages</span></h5><ul class="space-y-1.5 text-xs"><li><a href="index.html" class="hover:text-saffron-400"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a></li><li><a href="about.html" class="hover:text-saffron-400"><span class="hi">हमारे बारे में</span><span class="en">About Us</span></a></li><li><a href="courses.html" class="hover:text-saffron-400"><span class="hi">पाठ्यक्रम</span><span class="en">Courses</span></a></li><li><a href="notices.html" class="hover:text-saffron-400"><span class="hi">सूचना पट्ट</span><span class="en">Notice Board</span></a></li><li><a href="admissions.html" class="hover:text-saffron-400"><span class="hi">प्रवेश</span><span class="en">Admissions</span></a></li><li><a href="contact.html" class="hover:text-saffron-400"><span class="hi">संपर्क</span><span class="en">Contact</span></a></li></ul></div>
+      <div><h5 class="text-white font-bold text-xs uppercase tracking-widest mb-3"><span class="hi">संपर्क</span><span class="en">Contact</span></h5><ul class="space-y-2 text-xs"><li class="flex gap-2"><span>📍</span><span><span class="hi">प्रज्ञादीप, हर्षवर्धन नगर, भोपाल (म.प्र.)</span><span class="en">Pragyadeep, Harshvardhan Nagar, Bhopal (M.P.)</span></span></li><li><a href="tel:+918989229191" class="hover:text-saffron-400">📞 +91 89892 29191</a></li><li><a href="tel:07554922460" class="hover:text-saffron-400">📞 0755-4922460</a></li><li><a href="mailto:samutkarshsansthan@gmail.com" class="hover:text-saffron-400 break-all">✉ samutkarshsansthan@gmail.com</a></li></ul></div>
+    </div>
+    <div class="border-t border-white/10 pt-5 text-xs text-center text-gray-600">© 2026 समुत्कर्ष संस्थान, भोपाल | <span class="hi">प्रवेश पूर्णतः निःशुल्क।</span><span class="en">Admission is completely free.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  // Notice filter tabs
+  function filterNotices(category) {
+    const items = document.querySelectorAll('.notice-item');
+    const tabs  = document.querySelectorAll('.notice-tab');
+    let visible = 0;
+
+    items.forEach(item => {
+      const match = category === 'all' || item.dataset.category === category;
+      item.style.display = match ? '' : 'none';
+      if (match) visible++;
+    });
+
+    tabs.forEach(tab => {
+      tab.classList.toggle('bg-navy-900', tab.id === 'tab-' + category);
+      tab.classList.toggle('text-white',  tab.id === 'tab-' + category);
+      tab.classList.toggle('text-gray-500', tab.id !== 'tab-' + category);
+    });
+
+    document.getElementById('no-notices').classList.toggle('hidden', visible > 0);
+  }
+</script>
+</body>
+</html>

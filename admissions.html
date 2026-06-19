@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="hi" data-lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>प्रवेश आवेदन | Admissions — समुत्कर्ष संस्थान, भोपाल</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{'50':'#eff6ff','100':'#dbeafe','600':'#2563eb','700':'#1d4ed8','800':'#1e40af','900':'#1e3a8a','950':'#172554'},saffron:{'300':'#fcd34d','400':'#fbbf24','500':'#f59e0b','600':'#d97706'}}}}}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/lang.js"></script>
+  <style>
+    .radio-card:has(input:checked) { border-color:#f59e0b; background:#fffbeb; }
+    .step-done .step-num { background:#22c55e; color:#fff; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+<!-- TOP BAR -->
+<div class="bg-navy-950 text-gray-300 text-xs py-1.5 px-4 flex flex-col sm:flex-row justify-between items-center gap-1">
+  <span><span class="hi">संचालक: <strong class="text-saffron-400">विद्या भारती मध्य भारत प्रांत</strong> | भौराव देवरस सेवा न्यास, म.प्र.</span><span class="en">Managed by: <strong class="text-saffron-400">Vidya Bharati Madhya Bharat Prant</strong> | Bhaurao Deoras Seva Nyas, M.P.</span></span>
+  <span class="flex gap-4 flex-wrap justify-center">
+    <a href="tel:+918989229191" class="hover:text-saffron-400">📞 +91 89892 29191</a>
+    <a href="tel:07554922460"   class="hover:text-saffron-400">📞 0755-4922460</a>
+    <a href="mailto:samutkarshsansthan@gmail.com" class="hover:text-saffron-400">✉ samutkarshsansthan@gmail.com</a>
+  </span>
+</div>
+
+<!-- HEADER -->
+<header class="bg-navy-900 shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-saffron-500 flex items-center justify-center text-navy-900 font-black text-lg select-none">स</div>
+        <div>
+          <div class="text-white font-bold text-base leading-tight group-hover:text-saffron-400 transition-colors"><span class="hi">समुत्कर्ष संस्थान</span><span class="en">Samutkarsh Sansthan</span></div>
+          <div class="text-saffron-400 text-xs leading-tight">स्वर्गीय अर्चना शुक्ला स्मृति • भोपाल</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="index.html"      class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a>
+        <a href="about.html"      class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">हमारे बारे में</span><span class="en">About Us</span></a>
+        <a href="courses.html"    class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">पाठ्यक्रम</span><span class="en">Courses</span></a>
+        <a href="notices.html"    class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">सूचना पट्ट</span><span class="en">Notices</span></a>
+        <a href="admissions.html" class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">प्रवेश</span><span class="en">Admissions</span></a>
+        <a href="contact.html"    class="page-nav-link nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors"><span class="hi">संपर्क</span><span class="en">Contact</span></a>
+        <div class="ml-3 flex items-center bg-navy-950 rounded-lg p-0.5 gap-0.5">
+          <button onclick="setLang('hi')" data-lang="hi" class="lang-btn active-lang px-3 py-1.5 rounded-md text-xs font-semibold text-gray-300">हिंदी</button>
+          <button onclick="setLang('en')" data-lang="en" class="lang-btn px-3 py-1.5 rounded-md text-xs font-semibold text-gray-300">EN</button>
+        </div>
+        <a href="admissions.html" class="ml-2 px-4 py-2 bg-saffron-500 hover:bg-saffron-600 text-navy-950 font-bold text-sm rounded-lg transition-colors shadow-md"><span class="hi">निःशुल्क आवेदन →</span><span class="en">Apply Free →</span></a>
+      </nav>
+      <div class="flex items-center gap-2 md:hidden">
+        <div class="flex items-center bg-navy-950 rounded-lg p-0.5 gap-0.5">
+          <button onclick="setLang('hi')" data-lang="hi" class="lang-btn active-lang px-2 py-1 rounded-md text-xs font-semibold text-gray-300">हि</button>
+          <button onclick="setLang('en')" data-lang="en" class="lang-btn px-2 py-1 rounded-md text-xs font-semibold text-gray-300">EN</button>
+        </div>
+        <button id="nav-toggle" class="text-gray-200 hover:text-saffron-400 p-2">
+          <svg id="icon-open"  class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="md:hidden bg-navy-950 border-t border-navy-800">
+    <div class="px-4 py-3 space-y-1">
+      <a href="index.html"      class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a>
+      <a href="about.html"      class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">हमारे बारे में</span><span class="en">About Us</span></a>
+      <a href="courses.html"    class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">पाठ्यक्रम</span><span class="en">Courses</span></a>
+      <a href="notices.html"    class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">सूचना पट्ट</span><span class="en">Notices</span></a>
+      <a href="admissions.html" class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">प्रवेश</span><span class="en">Admissions</span></a>
+      <a href="contact.html"    class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded text-sm"><span class="hi">संपर्क</span><span class="en">Contact</span></a>
+      <a href="admissions.html" class="block mt-2 px-4 py-2 bg-saffron-500 text-navy-950 font-bold text-sm rounded-lg text-center"><span class="hi">निःशुल्क आवेदन →</span><span class="en">Apply Free →</span></a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="bg-navy-900 py-12">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <span class="inline-block bg-saffron-500/20 text-saffron-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"><span class="hi">निःशुल्क प्रवेश · सत्र 2026–27</span><span class="en">Free Admission · Session 2026–27</span></span>
+    <h1 class="text-3xl sm:text-4xl font-black text-white mb-2"><span class="hi">प्रवेश आवेदन पत्र</span><span class="en">Admission Registration Form</span></h1>
+    <p class="text-gray-400 text-sm max-w-xl mx-auto"><span class="hi">फॉर्म भरें — हमारी टीम 24 घंटे में WhatsApp पर संपर्क करेगी। किसी दस्तावेज़ की अभी आवश्यकता नहीं।</span><span class="en">Fill the form — our team will contact you on WhatsApp within 24 hours. No documents required at this stage.</span></p>
+  </div>
+</section>
+
+<!-- STEPS INDICATOR -->
+<div class="bg-white border-b border-gray-100">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div class="flex items-center justify-between gap-2 overflow-x-auto">
+      <div class="flex items-center gap-2 shrink-0">
+        <div class="step-num w-7 h-7 rounded-full bg-navy-900 text-white flex items-center justify-center text-xs font-black">1</div>
+        <span class="text-xs font-semibold text-navy-900 hidden sm:block"><span class="hi">व्यक्तिगत</span><span class="en">Personal</span></span>
+      </div>
+      <div class="flex-1 h-px bg-gray-200 min-w-[16px]"></div>
+      <div class="flex items-center gap-2 shrink-0">
+        <div class="step-num w-7 h-7 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center text-xs font-black">2</div>
+        <span class="text-xs font-semibold text-gray-400 hidden sm:block"><span class="hi">संपर्क</span><span class="en">Contact</span></span>
+      </div>
+      <div class="flex-1 h-px bg-gray-200 min-w-[16px]"></div>
+      <div class="flex items-center gap-2 shrink-0">
+        <div class="step-num w-7 h-7 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center text-xs font-black">3</div>
+        <span class="text-xs font-semibold text-gray-400 hidden sm:block"><span class="hi">परिवार</span><span class="en">Family</span></span>
+      </div>
+      <div class="flex-1 h-px bg-gray-200 min-w-[16px]"></div>
+      <div class="flex items-center gap-2 shrink-0">
+        <div class="step-num w-7 h-7 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center text-xs font-black">4</div>
+        <span class="text-xs font-semibold text-gray-400 hidden sm:block"><span class="hi">शैक्षणिक</span><span class="en">Academic</span></span>
+      </div>
+      <div class="flex-1 h-px bg-gray-200 min-w-[16px]"></div>
+      <div class="flex items-center gap-2 shrink-0">
+        <div class="step-num w-7 h-7 rounded-full bg-gray-200 text-gray-500 flex items-center justify-center text-xs font-black">5</div>
+        <span class="text-xs font-semibold text-gray-400 hidden sm:block"><span class="hi">घोषणा</span><span class="en">Declaration</span></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FORM -->
+<section class="py-10 bg-gray-50">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden">
+
+      <!-- Form strip header -->
+      <div class="bg-navy-950 px-8 py-4 flex items-center justify-between">
+        <div class="text-white text-sm font-semibold"><span class="hi">समुत्कर्ष संस्थान, भोपाल</span><span class="en">Samutkarsh Sansthan, Bhopal</span> &nbsp;·&nbsp; <span class="text-saffron-400"><span class="hi">प्रवेश आवेदन पत्र</span><span class="en">Admission Form</span></span></div>
+        <div class="text-gray-400 text-xs"><span class="hi">सत्र</span><span class="en">Session</span>: 2026–27</div>
+      </div>
+
+      <form id="registration-form" onsubmit="handleSubmit(event)" novalidate class="p-6 sm:p-10 space-y-10">
+        <input type="hidden" name="form_type" value="student_registration_2026" />
+
+        <!-- ── SECTION 1: Personal ── -->
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-8 h-8 rounded-full bg-navy-900 text-white flex items-center justify-center text-sm font-black shrink-0">1</div>
+            <div>
+              <h3 class="font-black text-navy-900"><span class="hi">व्यक्तिगत विवरण</span><span class="en">Personal Details</span></h3>
+              <p class="text-gray-400 text-xs"><span class="hi">विद्यार्थी की मूल जानकारी</span><span class="en">Student's basic information</span></p>
+            </div>
+            <div class="flex-1 h-px bg-gray-100"></div>
+          </div>
+
+          <!-- Student Name -->
+          <div class="mb-5">
+            <label for="student_name" class="block mb-1.5">
+              <span class="text-sm font-bold text-gray-800"><span class="hi">विद्यार्थी का नाम</span><span class="en">Student's Full Name</span></span>
+              <span class="text-red-500 ml-0.5">*</span>
+              <span class="block text-xs text-gray-400 font-normal mt-0.5"><span class="hi">जैसा प्रमाण-पत्र में है</span><span class="en">As per certificate</span></span>
+            </label>
+            <input type="text" id="student_name" name="student_name" required
+              placeholder="जैसे: राहुल कुमार शर्मा / e.g. Rahul Kumar Sharma"
+              class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 bg-gray-50 transition-colors" />
+          </div>
+
+          <!-- DOB + Gender -->
+          <div class="grid sm:grid-cols-2 gap-5 mb-5">
+            <div>
+              <label for="dob" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800"><span class="hi">जन्म दिनांक</span><span class="en">Date of Birth</span></span>
+                <span class="text-red-500 ml-0.5">*</span>
+              </label>
+              <input type="date" id="dob" name="dob" required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 bg-gray-50 transition-colors" />
+            </div>
+            <div>
+              <label class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800"><span class="hi">लिंग</span><span class="en">Gender</span></span>
+                <span class="text-red-500 ml-0.5">*</span>
+              </label>
+              <div class="grid grid-cols-3 gap-2">
+                <label class="radio-card flex flex-col items-center gap-1 border border-gray-200 rounded-xl px-3 py-2.5 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50 text-center">
+                  <input type="radio" name="gender" value="male" required class="accent-saffron-500" />
+                  <span class="text-xs font-semibold text-gray-700"><span class="hi">पुरुष</span><span class="en">Male</span></span>
+                </label>
+                <label class="radio-card flex flex-col items-center gap-1 border border-gray-200 rounded-xl px-3 py-2.5 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50 text-center">
+                  <input type="radio" name="gender" value="female" class="accent-saffron-500" />
+                  <span class="text-xs font-semibold text-gray-700"><span class="hi">महिला</span><span class="en">Female</span></span>
+                </label>
+                <label class="radio-card flex flex-col items-center gap-1 border border-gray-200 rounded-xl px-3 py-2.5 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50 text-center">
+                  <input type="radio" name="gender" value="other" class="accent-saffron-500" />
+                  <span class="text-xs font-semibold text-gray-700"><span class="hi">अन्य</span><span class="en">Other</span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Caste -->
+          <div class="mb-5">
+            <label class="block mb-2">
+              <span class="text-sm font-bold text-gray-800"><span class="hi">जाति वर्ग</span><span class="en">Caste Category</span></span>
+              <span class="text-red-500 ml-0.5">*</span>
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <label class="radio-card flex items-center gap-3 border border-gray-200 rounded-xl px-4 py-3 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50">
+                <input type="radio" name="caste" value="UR" required class="accent-saffron-500 shrink-0" />
+                <span class="text-sm font-bold text-gray-700">UR <span class="block text-gray-400 font-normal text-xs"><span class="hi">सामान्य</span><span class="en">General</span></span></span>
+              </label>
+              <label class="radio-card flex items-center gap-3 border border-gray-200 rounded-xl px-4 py-3 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50">
+                <input type="radio" name="caste" value="OBC" class="accent-saffron-500 shrink-0" />
+                <span class="text-sm font-bold text-gray-700">OBC <span class="block text-gray-400 font-normal text-xs"><span class="hi">अन्य पिछड़ा</span><span class="en">Other Backward</span></span></span>
+              </label>
+              <label class="radio-card flex items-center gap-3 border border-gray-200 rounded-xl px-4 py-3 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50">
+                <input type="radio" name="caste" value="SC" class="accent-saffron-500 shrink-0" />
+                <span class="text-sm font-bold text-gray-700">SC <span class="block text-gray-400 font-normal text-xs"><span class="hi">अनुसूचित जाति</span><span class="en">Scheduled Caste</span></span></span>
+              </label>
+              <label class="radio-card flex items-center gap-3 border border-gray-200 rounded-xl px-4 py-3 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50">
+                <input type="radio" name="caste" value="ST" class="accent-saffron-500 shrink-0" />
+                <span class="text-sm font-bold text-gray-700">ST <span class="block text-gray-400 font-normal text-xs"><span class="hi">अनुसूचित जनजाति</span><span class="en">Scheduled Tribe</span></span></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Address -->
+          <div>
+            <label for="address" class="block mb-1.5">
+              <span class="text-sm font-bold text-gray-800"><span class="hi">स्थायी पता</span><span class="en">Permanent Address</span></span>
+              <span class="text-red-500 ml-0.5">*</span>
+              <span class="block text-xs text-gray-400 font-normal mt-0.5"><span class="hi">भोपाल निवासियों को प्राथमिकता</span><span class="en">Preference given to Bhopal residents</span></span>
+            </label>
+            <textarea id="address" name="address" required rows="3"
+              placeholder="मकान नं., मोहल्ला/कॉलोनी, जिला, पिनकोड — जैसे: 45, हर्षवर्धन नगर, भोपाल 462003"
+              class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 bg-gray-50 resize-none transition-colors"></textarea>
+          </div>
+        </div>
+
+        <!-- ── SECTION 2: Contact ── -->
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-8 h-8 rounded-full bg-navy-900 text-white flex items-center justify-center text-sm font-black shrink-0">2</div>
+            <div>
+              <h3 class="font-black text-navy-900"><span class="hi">संपर्क विवरण</span><span class="en">Contact Details</span></h3>
+              <p class="text-gray-400 text-xs"><span class="hi">WhatsApp पर सूचना भेजी जाएगी</span><span class="en">Updates will be sent via WhatsApp</span></p>
+            </div>
+            <div class="flex-1 h-px bg-gray-100"></div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="mobile" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800"><span class="hi">मोबाइल नंबर (WhatsApp)</span><span class="en">Mobile Number (WhatsApp)</span></span>
+                <span class="text-red-500 ml-0.5">*</span>
+              </label>
+              <div class="flex">
+                <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-gray-200 bg-gray-100 text-gray-600 text-sm font-bold">+91</span>
+                <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" maxlength="10"
+                  placeholder="10 अंक / 10-digit number"
+                  class="flex-1 px-4 py-3 border border-gray-200 rounded-r-xl text-sm placeholder-gray-400 bg-gray-50 transition-colors"
+                  oninput="this.value=this.value.replace(/\D/g,'')" />
+              </div>
+            </div>
+            <div>
+              <label for="email" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800"><span class="hi">ईमेल पता</span><span class="en">Email Address</span></span>
+                <span class="text-red-500 ml-0.5">*</span>
+              </label>
+              <input type="email" id="email" name="email" required
+                placeholder="उदा. rahul@gmail.com / e.g. rahul@gmail.com"
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 bg-gray-50 transition-colors" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SECTION 3: Family ── -->
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-8 h-8 rounded-full bg-navy-900 text-white flex items-center justify-center text-sm font-black shrink-0">3</div>
+            <div>
+              <h3 class="font-black text-navy-900"><span class="hi">पारिवारिक विवरण</span><span class="en">Family Details</span></h3>
+            </div>
+            <div class="flex-1 h-px bg-gray-100"></div>
+          </div>
+
+          <!-- Father -->
+          <div class="bg-navy-900/4 border border-navy-900/10 rounded-2xl p-5 mb-4">
+            <p class="text-xs font-black text-navy-900 uppercase tracking-widest mb-4"><span class="hi">पिता / Father</span><span class="en">Father's Details</span></p>
+            <div class="grid sm:grid-cols-3 gap-4">
+              <div>
+                <label for="father_name" class="block mb-1.5 text-sm font-bold text-gray-800">
+                  <span class="hi">पिता का नाम</span><span class="en">Father's Name</span> <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="father_name" name="father_name" required
+                  placeholder="पूरा नाम / Full name"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 bg-white transition-colors" />
+              </div>
+              <div>
+                <label for="father_occ" class="block mb-1.5 text-sm font-bold text-gray-800">
+                  <span class="hi">पिता का व्यवसाय</span><span class="en">Father's Occupation</span> <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="father_occ" name="father_occupation" required
+                  placeholder="जैसे: किसान, शिक्षक / e.g. Farmer"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 bg-white transition-colors" />
+              </div>
+              <div>
+                <label for="father_inc" class="block mb-1.5 text-sm font-bold text-gray-800">
+                  <span class="hi">पिता की वार्षिक आय</span><span class="en">Father's Annual Income</span> <span class="text-red-500">*</span>
+                </label>
+                <select id="father_inc" name="father_income" required
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 bg-white transition-colors">
+                  <option value="" disabled selected><span class="hi">— चुनें —</span><span class="en">— Select —</span></option>
+                  <option value="below_1L">₹1 <span class="hi">लाख से कम</span><span class="en">Lakh below</span></option>
+                  <option value="1L_2.5L">₹1–2.5 <span class="hi">लाख</span><span class="en">Lakh</span></option>
+                  <option value="2.5L_5L">₹2.5–5 <span class="hi">लाख</span><span class="en">Lakh</span></option>
+                  <option value="5L_8L">₹5–8 <span class="hi">लाख</span><span class="en">Lakh</span></option>
+                  <option value="above_8L">₹8 <span class="hi">लाख से अधिक</span><span class="en">Lakh above</span></option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mother -->
+          <div class="bg-saffron-500/5 border border-saffron-500/15 rounded-2xl p-5">
+            <p class="text-xs font-black text-saffron-600 uppercase tracking-widest mb-4"><span class="hi">माता / Mother</span><span class="en">Mother's Details</span></p>
+            <div class="grid sm:grid-cols-3 gap-4">
+              <div>
+                <label for="mother_name" class="block mb-1.5 text-sm font-bold text-gray-800">
+                  <span class="hi">माता का नाम</span><span class="en">Mother's Name</span> <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="mother_name" name="mother_name" required
+                  placeholder="पूरा नाम / Full name"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 bg-white transition-colors" />
+              </div>
+              <div>
+                <label for="mother_occ" class="block mb-1.5 text-sm font-bold text-gray-800">
+                  <span class="hi">माता का व्यवसाय</span><span class="en">Mother's Occupation</span>
+                </label>
+                <input type="text" id="mother_occ" name="mother_occupation"
+                  placeholder="जैसे: गृहिणी / e.g. Homemaker"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 bg-white transition-colors" />
+              </div>
+              <div>
+                <label for="mother_inc" class="block mb-1.5 text-sm font-bold text-gray-800">
+                  <span class="hi">माता की वार्षिक आय</span><span class="en">Mother's Annual Income</span>
+                </label>
+                <select id="mother_inc" name="mother_income"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 bg-white transition-colors">
+                  <option value="">— <span class="hi">चुनें</span><span class="en">Select</span> —</option>
+                  <option value="nil"><span class="hi">शून्य (गृहिणी)</span><span class="en">Nil (Homemaker)</span></option>
+                  <option value="below_1L">₹1 <span class="hi">लाख से कम</span><span class="en">Lakh below</span></option>
+                  <option value="1L_2.5L">₹1–2.5 <span class="hi">लाख</span><span class="en">Lakh</span></option>
+                  <option value="2.5L_5L">₹2.5–5 <span class="hi">लाख</span><span class="en">Lakh</span></option>
+                  <option value="above_5L">₹5 <span class="hi">लाख से अधिक</span><span class="en">Lakh above</span></option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SECTION 4: Academic ── -->
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-8 h-8 rounded-full bg-navy-900 text-white flex items-center justify-center text-sm font-black shrink-0">4</div>
+            <div>
+              <h3 class="font-black text-navy-900"><span class="hi">शैक्षणिक एवं परीक्षा विवरण</span><span class="en">Academic &amp; Exam Details</span></h3>
+            </div>
+            <div class="flex-1 h-px bg-gray-100"></div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-5 mb-5">
+            <div>
+              <label for="qualification" class="block mb-1.5 text-sm font-bold text-gray-800">
+                <span class="hi">वर्तमान शैक्षणिक योग्यता</span><span class="en">Current Educational Qualification</span> <span class="text-red-500">*</span>
+              </label>
+              <select id="qualification" name="qualification" required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 bg-gray-50 transition-colors">
+                <option value="" disabled selected>— <span class="hi">चुनें</span><span class="en">Select</span> —</option>
+                <option value="12th"><span class="hi">12वीं / इंटरमीडिएट</span><span class="en">12th / Intermediate</span></option>
+                <option value="grad_pursuing"><span class="hi">स्नातक अध्ययनरत</span><span class="en">Pursuing Graduation</span></option>
+                <option value="graduate"><span class="hi">स्नातक</span><span class="en">Graduate</span></option>
+                <option value="pg_pursuing"><span class="hi">स्नातकोत्तर अध्ययनरत</span><span class="en">Pursuing Post-Graduation</span></option>
+                <option value="postgraduate"><span class="hi">स्नातकोत्तर</span><span class="en">Post-Graduate</span></option>
+              </select>
+            </div>
+            <div>
+              <label for="grad_degree" class="block mb-1.5 text-sm font-bold text-gray-800">
+                <span class="hi">स्नातक की डिग्री</span><span class="en">Graduation Degree</span>
+                <span class="block text-xs text-gray-400 font-normal mt-0.5"><span class="hi">यदि लागू हो</span><span class="en">If applicable</span></span>
+              </label>
+              <input type="text" id="grad_degree" name="graduation_degree"
+                placeholder="B.A. / B.Sc. / B.Com. / B.Tech."
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 bg-gray-50 transition-colors" />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="exam_name" class="block mb-1.5 text-sm font-bold text-gray-800">
+                <span class="hi">प्रतियोगी परीक्षा का नाम</span><span class="en">Target Competitive Exam</span> <span class="text-red-500">*</span>
+              </label>
+              <select id="exam_name" name="exam_name" required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 bg-gray-50 transition-colors">
+                <option value="" disabled selected>— <span class="hi">परीक्षा चुनें</span><span class="en">Select Exam</span> —</option>
+                <optgroup label="── बैच 1: सिविल सेवा / Batch 1: Civil Services ──">
+                  <option value="upsc">UPSC CSE (IAS / IPS / IFS)</option>
+                  <option value="mppsc">MPPSC <span class="hi">राज्य सेवा</span><span class="en">State Service</span></option>
+                  <option value="upsc_mppsc"><span class="hi">UPSC + MPPSC दोनों</span><span class="en">UPSC + MPPSC Both</span></option>
+                </optgroup>
+                <optgroup label="── बैच 2: एक दिवसीय / Batch 2: One-Day ──">
+                  <option value="ibps_po">IBPS PO / SBI PO</option>
+                  <option value="ibps_clerk">IBPS Clerk / SBI Clerk</option>
+                  <option value="ssc_cgl">SSC CGL</option>
+                  <option value="ssc_chsl">SSC CHSL / MTS</option>
+                  <option value="mp_police">MP <span class="hi">पुलिस</span><span class="en">Police</span> (Constable / SI)</option>
+                  <option value="patwari"><span class="hi">पटवारी / व्यापम</span><span class="en">Patwari / Vyapam</span></option>
+                  <option value="rrb">RRB NTPC / Group D</option>
+                  <option value="other_one_day"><span class="hi">अन्य एक दिवसीय</span><span class="en">Other One-Day Exam</span></option>
+                </optgroup>
+              </select>
+            </div>
+            <div>
+              <label class="block mb-2 text-sm font-bold text-gray-800">
+                <span class="hi">माध्यम</span><span class="en">Preferred Medium</span> <span class="text-red-500">*</span>
+              </label>
+              <div class="grid grid-cols-2 gap-3">
+                <label class="radio-card flex items-center gap-3 border border-gray-200 rounded-xl px-4 py-3.5 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50">
+                  <input type="radio" name="medium" value="hindi" required class="accent-saffron-500" checked />
+                  <span class="text-sm font-bold text-gray-700">हिंदी <span class="block text-gray-400 font-normal text-xs">Hindi</span></span>
+                </label>
+                <label class="radio-card flex items-center gap-3 border border-gray-200 rounded-xl px-4 py-3.5 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50">
+                  <input type="radio" name="medium" value="english" class="accent-saffron-500" />
+                  <span class="text-sm font-bold text-gray-700">English <span class="block text-gray-400 font-normal text-xs">अंग्रेजी</span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── SECTION 5: Declaration ── -->
+        <div>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-8 h-8 rounded-full bg-navy-900 text-white flex items-center justify-center text-sm font-black shrink-0">5</div>
+            <div>
+              <h3 class="font-black text-navy-900"><span class="hi">घोषणा</span><span class="en">Declaration</span></h3>
+            </div>
+            <div class="flex-1 h-px bg-gray-100"></div>
+          </div>
+
+          <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-5">
+            <p class="text-gray-800 text-sm leading-relaxed font-medium mb-3">
+              <span class="hi">मैं, <span class="underline">…………………………………</span>, घोषणा करता/करती हूँ कि ऊपर दी गई समस्त जानकारी मेरी जानकारी और विश्वास के अनुसार सत्य एवं सही है। मुझे ज्ञात है कि यह कोचिंग कार्यक्रम पूर्णतः निःशुल्क है तथा किसी भी प्रकार का शुल्क देय नहीं है।</span>
+              <span class="en">I hereby declare that all information provided above is true and correct to the best of my knowledge and belief. I understand that this coaching programme is completely free and no fee of any kind is payable.</span>
+            </p>
+            <p class="text-gray-500 text-xs leading-relaxed italic">
+              <span class="hi">मैं यह भी स्वीकार करता/करती हूँ कि प्रवेश मेरिट एवं प्रवेश परीक्षा के आधार पर होगा तथा किसी भी अनुशंसा से प्रवेश नहीं दिया जाता।</span>
+              <span class="en">I also accept that admission will be based on merit and entrance exam only, and no direct recommendation is entertained.</span>
+            </p>
+          </div>
+
+          <!-- Date + Place -->
+          <div class="grid sm:grid-cols-2 gap-5 mb-5">
+            <div>
+              <label for="decl_date" class="block mb-1.5 text-sm font-bold text-gray-800">
+                <span class="hi">दिनांक</span><span class="en">Date</span> <span class="text-red-500">*</span>
+              </label>
+              <input type="date" id="decl_date" name="declaration_date" required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 bg-gray-50 transition-colors" />
+            </div>
+            <div>
+              <label for="decl_place" class="block mb-1.5 text-sm font-bold text-gray-800">
+                <span class="hi">स्थान</span><span class="en">Place</span> <span class="text-red-500">*</span>
+              </label>
+              <input type="text" id="decl_place" name="declaration_place" required
+                placeholder="जैसे: भोपाल / e.g. Bhopal"
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 bg-gray-50 transition-colors" />
+            </div>
+          </div>
+
+          <!-- Consent -->
+          <label class="flex items-start gap-3 cursor-pointer group bg-gray-50 border border-gray-200 rounded-xl p-4 hover:border-saffron-400 transition-colors">
+            <input type="checkbox" id="consent" name="consent" required class="mt-0.5 accent-saffron-500 w-4 h-4 shrink-0" />
+            <span class="text-sm text-gray-700 leading-relaxed">
+              <span class="hi">मैं उपरोक्त घोषणा से पूर्णतः सहमत हूँ तथा पुष्टि करता/करती हूँ कि दी गई सभी जानकारी सत्य है।</span>
+              <span class="en">I fully agree to the above declaration and confirm that all information provided is accurate and true.</span>
+              <span class="text-red-500 ml-0.5">*</span>
+            </span>
+          </label>
+        </div>
+
+        <!-- SUBMIT -->
+        <div class="pt-2">
+          <button type="submit" id="submit-btn"
+            class="w-full py-4 bg-navy-900 hover:bg-navy-800 text-white font-black text-base rounded-xl transition-all shadow-lg active:scale-[0.98]">
+            <span class="hi">आवेदन जमा करें / Submit Registration →</span>
+            <span class="en">Submit My Free Registration →</span>
+          </button>
+
+          <div id="form-success" class="hidden mt-6 bg-green-50 border border-green-200 rounded-2xl p-6 text-center">
+            <div class="text-green-600 font-black text-xl mb-2">✅ <span class="hi">आवेदन सफलतापूर्वक जमा हुआ!</span><span class="en">Application Submitted Successfully!</span></div>
+            <p class="text-gray-600 text-sm"><span class="hi">हमारी टीम 24 घंटे में आपके WhatsApp नंबर पर संपर्क करेगी।</span><span class="en">Our team will contact you on WhatsApp within 24 hours.</span></p>
+          </div>
+
+          <p class="text-center text-xs text-gray-400 mt-4">
+            🔒 <span class="hi">आपकी जानकारी पूर्णतः सुरक्षित है और किसी के साथ साझा नहीं की जाएगी। यह एक निःशुल्क कार्यक्रम है।</span>
+            <span class="en">Your data is completely private and will never be shared. This is a zero-fee programme.</span>
+          </p>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-navy-950 text-gray-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="grid md:grid-cols-3 gap-10 mb-8">
+      <div><div class="flex items-center gap-3 mb-3"><div class="w-9 h-9 rounded-full bg-saffron-500 flex items-center justify-center text-navy-900 font-black">स</div><div class="text-white font-bold text-sm"><span class="hi">समुत्कर्ष संस्थान, भोपाल</span><span class="en">Samutkarsh Sansthan, Bhopal</span></div></div><p class="text-xs leading-relaxed"><span class="hi">विद्या भारती मध्य भारत प्रांत | भौराव देवरस सेवा न्यास, म.प्र.</span><span class="en">Vidya Bharati Madhya Bharat Prant | Bhaurao Deoras Seva Nyas, M.P.</span></p></div>
+      <div><h5 class="text-white font-bold text-xs uppercase tracking-widest mb-3"><span class="hi">पृष्ठ</span><span class="en">Pages</span></h5><ul class="space-y-1.5 text-xs"><li><a href="index.html" class="hover:text-saffron-400"><span class="hi">मुख्य पृष्ठ</span><span class="en">Home</span></a></li><li><a href="about.html" class="hover:text-saffron-400"><span class="hi">हमारे बारे में</span><span class="en">About Us</span></a></li><li><a href="courses.html" class="hover:text-saffron-400"><span class="hi">पाठ्यक्रम</span><span class="en">Courses</span></a></li><li><a href="notices.html" class="hover:text-saffron-400"><span class="hi">सूचना पट्ट</span><span class="en">Notice Board</span></a></li><li><a href="admissions.html" class="hover:text-saffron-400"><span class="hi">प्रवेश</span><span class="en">Admissions</span></a></li><li><a href="contact.html" class="hover:text-saffron-400"><span class="hi">संपर्क</span><span class="en">Contact</span></a></li></ul></div>
+      <div><h5 class="text-white font-bold text-xs uppercase tracking-widest mb-3"><span class="hi">संपर्क</span><span class="en">Contact</span></h5><ul class="space-y-2 text-xs"><li class="flex gap-2"><span>📍</span><span><span class="hi">प्रज्ञादीप, हर्षवर्धन नगर, भोपाल (म.प्र.)</span><span class="en">Pragyadeep, Harshvardhan Nagar, Bhopal (M.P.)</span></span></li><li><a href="tel:+918989229191" class="hover:text-saffron-400">📞 +91 89892 29191</a></li><li><a href="tel:07554922460" class="hover:text-saffron-400">📞 0755-4922460</a></li><li><a href="mailto:samutkarshsansthan@gmail.com" class="hover:text-saffron-400 break-all">✉ samutkarshsansthan@gmail.com</a></li></ul></div>
+    </div>
+    <div class="border-t border-white/10 pt-5 text-xs text-center text-gray-600">© 2026 समुत्कर्ष संस्थान, भोपाल | <span class="hi">प्रवेश पूर्णतः निःशुल्क।</span><span class="en">Admission is completely free.</span></div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
