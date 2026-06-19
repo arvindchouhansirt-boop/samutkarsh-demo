@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samutkarsh Sansthan, Bhopal — स्वर्गीय अर्चना शुक्ला स्मृति</title>
+  <meta name="description" content="Free competitive exam coaching for meritorious and economically weaker students in Bhopal. UPSC, MPPSC, Banking, SSC preparation." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              50:  '#eff6ff',
+              100: '#dbeafe',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#1e40af',
+              900: '#1e3a8a',
+              950: '#172554',
+            },
+            saffron: {
+              300: '#fcd34d',
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    /* Smooth scroll */
+    html { scroll-behavior: smooth; }
+
+    /* Notice ticker animation */
+    @keyframes ticker {
+      0%   { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .ticker-track { animation: ticker 28s linear infinite; white-space: nowrap; }
+    .ticker-track:hover { animation-play-state: paused; }
+
+    /* Counter animation */
+    .counter { transition: all 0.3s ease; }
+
+    /* Mobile nav toggle */
+    #mobile-menu { display: none; }
+    #mobile-menu.open { display: block; }
+
+    /* Form focus ring */
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(245,158,11,0.35);
+    }
+
+    /* Smooth card hover */
+    .card-hover {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(30,58,138,0.15);
+    }
+
+    /* Section fade-in on scroll (JS-driven) */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* Active nav link */
+    .nav-link.active { color: #f59e0b; border-bottom: 2px solid #f59e0b; }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800 antialiased">
+
+<!-- ═══════════════════════════════════════════
+     TOP BAR
+═══════════════════════════════════════════ -->
+<div class="bg-navy-950 text-gray-300 text-xs py-1.5 px-4 flex flex-col sm:flex-row justify-between items-center gap-1">
+  <span>Run by <strong class="text-saffron-400">Vidya Bharati Madhya Bharat</strong> &nbsp;|&nbsp; Affiliated to a legacy of knowledge &amp; service</span>
+  <span class="flex gap-4">
+    <a href="tel:+918989229191" class="hover:text-saffron-400 transition-colors">📞 +91 89892 29191</a>
+    <a href="mailto:samutkarshsansthan@gmail.com" class="hover:text-saffron-400 transition-colors">✉ samutkarshsansthan@gmail.com</a>
+  </span>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HEADER / NAVIGATION
+═══════════════════════════════════════════ -->
+<header class="bg-navy-900 shadow-lg sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Logo + Branding -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <!-- Replace src with actual logo path in WordPress: <?php echo get_template_directory_uri(); ?>/assets/logo.png -->
+        <div class="w-10 h-10 rounded-full bg-saffron-500 flex items-center justify-center text-navy-900 font-black text-lg select-none">स</div>
+        <div>
+          <div class="text-white font-bold text-base leading-tight group-hover:text-saffron-400 transition-colors">Samutkarsh Sansthan</div>
+          <div class="text-saffron-400 text-xs leading-tight">स्वर्गीय अर्चना शुक्ला स्मृति • Bhopal</div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-1">
+        <a href="#home"       class="nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors rounded">Home</a>
+        <a href="#about"      class="nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors rounded">About Us</a>
+        <a href="#courses"    class="nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors rounded">Courses</a>
+        <a href="#notices"    class="nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors rounded">Notice Board</a>
+        <a href="#register"   class="nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors rounded">Admissions</a>
+        <a href="#contact"    class="nav-link px-3 py-1.5 text-sm text-gray-200 hover:text-saffron-400 transition-colors rounded">Contact</a>
+        <a href="#register"   class="ml-3 px-4 py-2 bg-saffron-500 hover:bg-saffron-600 text-navy-950 font-semibold text-sm rounded-lg transition-colors shadow-md">Apply Free →</a>
+      </nav>
+
+      <!-- Mobile Hamburger -->
+      <button id="nav-toggle" class="md:hidden text-gray-200 hover:text-saffron-400 transition-colors p-2" aria-label="Toggle menu">
+        <svg id="icon-open"  class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden bg-navy-950 border-t border-navy-800">
+    <div class="px-4 py-3 space-y-1">
+      <a href="#home"     class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded transition-colors text-sm">Home</a>
+      <a href="#about"    class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded transition-colors text-sm">About Us</a>
+      <a href="#courses"  class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded transition-colors text-sm">Courses</a>
+      <a href="#notices"  class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded transition-colors text-sm">Notice Board</a>
+      <a href="#register" class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded transition-colors text-sm">Admissions</a>
+      <a href="#contact"  class="block px-3 py-2 text-gray-200 hover:text-saffron-400 hover:bg-navy-900 rounded transition-colors text-sm">Contact</a>
+      <a href="#register" class="block mt-2 px-4 py-2 bg-saffron-500 text-navy-950 font-semibold text-sm rounded-lg text-center">Apply Free →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════
+     NOTICE TICKER
+═══════════════════════════════════════════ -->
+<div class="bg-saffron-500 overflow-hidden py-2 flex items-center">
+  <span class="shrink-0 bg-navy-900 text-saffron-400 font-bold text-xs px-4 py-1 uppercase tracking-widest mr-3 rounded-r-full">Live Notices</span>
+  <div class="overflow-hidden flex-1">
+    <div class="ticker-track text-navy-950 font-semibold text-sm">
+      <!-- WordPress: populate via custom post type or ACF field loop -->
+      🔔 Admissions Open for UPSC/MPPSC Batch 2026–27 — Apply Now &nbsp;&nbsp;|&nbsp;&nbsp;
+      🔔 One-Day Exams Batch (Banking · SSC · Police · Patwari) — 50 Seats Available &nbsp;&nbsp;|&nbsp;&nbsp;
+      🔔 Guest Lecture by IAS Officer — Sat 28 June 2026 at 10:00 AM &nbsp;&nbsp;|&nbsp;&nbsp;
+      🔔 Mock Test Series begins 1 July 2026 — Register before 25 June &nbsp;&nbsp;|&nbsp;&nbsp;
+      🔔 Coaching is 100% Free — No hidden fee whatsoever &nbsp;&nbsp;|&nbsp;&nbsp;
+      🔔 Contact: +91 89892 29191 &nbsp;&nbsp;|&nbsp;&nbsp; Email: samutkarshsansthan@gmail.com &nbsp;&nbsp;|&nbsp;&nbsp;
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════════════ -->
+<section id="home" class="relative bg-navy-900 overflow-hidden">
+  <!-- Background gradient orbs -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute -top-32 -left-32 w-96 h-96 bg-saffron-500 opacity-10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 w-80 h-80 bg-blue-600 opacity-10 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-36">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+      <!-- Left: Text Content -->
+      <div>
+        <!-- Badge -->
+        <span class="inline-flex items-center gap-2 bg-saffron-500 bg-opacity-20 border border-saffron-500 border-opacity-40 text-saffron-400 text-xs font-semibold px-4 py-1.5 rounded-full mb-6">
+          🎓 स्वर्गीय अर्चना शुक्ला स्मृति &nbsp;·&nbsp; Est. Bhopal
+        </span>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-5">
+          Shaping Futures,<br/>
+          <span class="text-saffron-400">Empowering Dreams</span>
+        </h1>
+
+        <p class="text-gray-300 text-lg leading-relaxed mb-8 max-w-lg">
+          Free competitive exam coaching for meritorious &amp; economically weaker students in Bhopal — because talent should never be held back by finances.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap gap-4">
+          <a href="#register" class="px-6 py-3 bg-saffron-500 hover:bg-saffron-600 text-navy-950 font-bold rounded-xl transition-all shadow-lg hover:shadow-saffron-500/30 hover:shadow-xl active:scale-95">
+            Apply for Free Admission
+          </a>
+          <a href="#courses" class="px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 transition-all active:scale-95">
+            Explore Batches →
+          </a>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="mt-10 flex flex-wrap gap-4 text-sm text-gray-400">
+          <span class="flex items-center gap-1.5">✅ <span>100% Free — Forever</span></span>
+          <span class="flex items-center gap-1.5">✅ <span>Vidya Bharati Affiliated</span></span>
+          <span class="flex items-center gap-1.5">✅ <span>Senior IAS/IPS Mentors</span></span>
+        </div>
+      </div>
+
+      <!-- Right: Stats Cards -->
+      <div class="grid grid-cols-2 gap-4">
+        <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center card-hover">
+          <div class="text-4xl font-black text-saffron-400 mb-1">100%</div>
+          <div class="text-gray-300 text-sm font-medium">Free Coaching &amp; Resources</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center card-hover">
+          <div class="text-4xl font-black text-saffron-400 mb-1">2</div>
+          <div class="text-gray-300 text-sm font-medium">Specialized Batches</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center card-hover">
+          <div class="text-4xl font-black text-saffron-400 mb-1">100+</div>
+          <div class="text-gray-300 text-sm font-medium">Seats per Session</div>
+        </div>
+        <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center card-hover">
+          <div class="text-4xl font-black text-saffron-400 mb-1">∞</div>
+          <div class="text-gray-300 text-sm font-medium">Sessions with Senior Bureaucrats</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     ABOUT SECTION
+═══════════════════════════════════════════ -->
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+      <!-- Left: Visual card stack -->
+      <div class="relative reveal">
+        <div class="bg-navy-900 rounded-3xl p-8 text-white">
+          <div class="text-saffron-400 text-5xl font-black mb-3">स</div>
+          <h3 class="text-2xl font-bold mb-4">Samutkarsh Sansthan</h3>
+          <p class="text-gray-300 text-sm leading-relaxed mb-6">
+            Founded in memory of Smt. Archana Shukla, the institution stands as a beacon of hope — offering completely free, high-quality coaching to students who lack financial resources but possess the intellect and drive to serve the nation through civil services.
+          </p>
+          <div class="border-t border-white/20 pt-6 grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <div class="text-saffron-400 font-semibold mb-0.5">Managed By</div>
+              <div class="text-gray-300">Vidya Bharati Madhya Bharat</div>
+            </div>
+            <div>
+              <div class="text-saffron-400 font-semibold mb-0.5">Location</div>
+              <div class="text-gray-300">Harshvardhan Nagar, Bhopal</div>
+            </div>
+            <div>
+              <div class="text-saffron-400 font-semibold mb-0.5">Admission Fee</div>
+              <div class="text-gray-300">Absolutely Zero ₹0</div>
+            </div>
+            <div>
+              <div class="text-saffron-400 font-semibold mb-0.5">Target Exams</div>
+              <div class="text-gray-300">UPSC · MPPSC · Bank · SSC</div>
+            </div>
+          </div>
+        </div>
+        <!-- Decorative accent -->
+        <div class="absolute -bottom-4 -right-4 w-40 h-40 bg-saffron-500/10 rounded-3xl -z-10 border border-saffron-500/20"></div>
+      </div>
+
+      <!-- Right: Mission text -->
+      <div class="reveal">
+        <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">Our Mission</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mb-5 leading-tight">
+          Bridging the Gap Between<br/><span class="text-saffron-500">Talent &amp; Opportunity</span>
+        </h2>
+        <p class="text-gray-600 leading-relaxed mb-5">
+          In India, thousands of brilliant minds from economically weaker backgrounds never get a fair chance to compete for prestigious civil service and government positions — not due to lack of capability, but lack of resources. Samutkarsh Sansthan changes that equation entirely.
+        </p>
+        <p class="text-gray-600 leading-relaxed mb-8">
+          We provide structured coaching, curated study materials, mock tests, mentoring from serving and retired senior bureaucrats, and a disciplined learning environment — all at zero cost — so that every deserving student from Bhopal can compete on an equal footing.
+        </p>
+
+        <!-- Feature pills -->
+        <div class="flex flex-wrap gap-3">
+          <span class="px-4 py-2 bg-navy-900/10 text-navy-900 rounded-full text-sm font-medium">🏛 Expert Faculty</span>
+          <span class="px-4 py-2 bg-saffron-500/15 text-saffron-600 rounded-full text-sm font-medium">📚 Curated Materials</span>
+          <span class="px-4 py-2 bg-navy-900/10 text-navy-900 rounded-full text-sm font-medium">📝 Weekly Mock Tests</span>
+          <span class="px-4 py-2 bg-saffron-500/15 text-saffron-600 rounded-full text-sm font-medium">🎤 IAS/IPS Guest Lectures</span>
+          <span class="px-4 py-2 bg-navy-900/10 text-navy-900 rounded-full text-sm font-medium">💻 Computer Lab Access</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     COURSES SECTION
+═══════════════════════════════════════════ -->
+<section id="courses" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section Header -->
+    <div class="text-center mb-14 reveal">
+      <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">Our Batches</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mb-3">Two Specialized Coaching Tracks</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto">Each batch is meticulously structured, taught by experienced faculty, and supported by an ecosystem of mock tests, study materials, and mentorship.</p>
+    </div>
+
+    <!-- Batch Cards -->
+    <div class="grid md:grid-cols-2 gap-8 mb-14">
+
+      <!-- Batch 1: Civil Services -->
+      <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden card-hover reveal">
+        <div class="bg-navy-900 px-8 py-6">
+          <div class="flex items-start justify-between">
+            <div>
+              <span class="inline-block bg-saffron-500 text-navy-950 text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wide">Batch 1</span>
+              <h3 class="text-xl font-black text-white">Civil Services Specialization</h3>
+              <p class="text-saffron-300 text-sm mt-1">UPSC &amp; MPPSC (Pre + Mains)</p>
+            </div>
+            <div class="text-right shrink-0">
+              <div class="text-3xl font-black text-saffron-400">50</div>
+              <div class="text-gray-400 text-xs">Seats</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-8">
+          <ul class="space-y-3 mb-6 text-sm text-gray-600">
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-saffron-500 font-bold">→</span>
+              <span>Daily <strong>3-hour rigorous classes</strong> covering GS Paper I–IV, CSAT, and MPPSC-specific topics</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-saffron-500 font-bold">→</span>
+              <span><strong>Weekly Mock Tests</strong> with detailed answer key review and rank analysis</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-saffron-500 font-bold">→</span>
+              <span><strong>Interactive sessions</strong> with IAS, IPS, and IFS officers regularly</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-saffron-500 font-bold">→</span>
+              <span>Answer writing practice, newspaper analysis, and UPSC interview guidance</span>
+            </li>
+          </ul>
+          <div class="bg-navy-900/5 border border-navy-900/10 rounded-xl p-4 flex items-center justify-between text-sm mb-6">
+            <span class="text-gray-600 font-medium">Admission Fee</span>
+            <span class="text-2xl font-black text-navy-900">₹ 0 <span class="text-sm text-gray-400 font-normal">/ year</span></span>
+          </div>
+          <a href="#register" class="block w-full text-center py-3 bg-navy-900 hover:bg-navy-800 text-white font-semibold rounded-xl transition-colors">
+            Register for Civil Services Batch →
+          </a>
+        </div>
+      </div>
+
+      <!-- Batch 2: One-Day Exams -->
+      <div class="bg-white rounded-3xl shadow-sm border border-gray-100 overflow-hidden card-hover reveal">
+        <div class="bg-gradient-to-br from-saffron-500 to-saffron-600 px-8 py-6">
+          <div class="flex items-start justify-between">
+            <div>
+              <span class="inline-block bg-navy-900 text-saffron-400 text-xs font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wide">Batch 2</span>
+              <h3 class="text-xl font-black text-navy-950">One-Day Exam Specialization</h3>
+              <p class="text-navy-800 text-sm mt-1 font-medium">Banking · SSC · Police · Patwari</p>
+            </div>
+            <div class="text-right shrink-0">
+              <div class="text-3xl font-black text-navy-950">50</div>
+              <div class="text-navy-700 text-xs">Seats</div>
+            </div>
+          </div>
+        </div>
+        <div class="p-8">
+          <ul class="space-y-3 mb-6 text-sm text-gray-600">
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-saffron-500 font-bold">→</span>
+              <span><strong>IBPS, SBI PO/Clerk</strong>, RRB, and all central/state bank recruitment exams</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-saffron-500 font-bold">→</span>
+              <span><strong>SSC CGL, CHSL, MTS</strong>, and related Staff Selection Commission exams</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-saffron-500 font-bold">→</span>
+              <span><strong>MP Police, Patwari</strong>, and Vyapam-pattern state recruitment exams</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="mt-0.5 text-saffron-500 font-bold">→</span>
+              <span>Speed &amp; accuracy drills, sectional tests, and online mock exam access in computer lab</span>
+            </li>
+          </ul>
+          <div class="bg-saffron-500/10 border border-saffron-500/20 rounded-xl p-4 flex items-center justify-between text-sm mb-6">
+            <span class="text-gray-600 font-medium">Admission Fee</span>
+            <span class="text-2xl font-black text-navy-900">₹ 0 <span class="text-sm text-gray-400 font-normal">/ year</span></span>
+          </div>
+          <a href="#register" class="block w-full text-center py-3 bg-saffron-500 hover:bg-saffron-600 text-navy-950 font-bold rounded-xl transition-colors">
+            Register for One-Day Exams Batch →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Infrastructure Grid -->
+    <div class="mb-6 text-center reveal">
+      <h3 class="text-2xl font-black text-navy-900 mb-2">World-Class Infrastructure</h3>
+      <p class="text-gray-500 text-sm">Every student deserves the best environment to learn and grow.</p>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm card-hover reveal text-center">
+        <div class="w-14 h-14 mx-auto mb-4 bg-navy-900/10 rounded-2xl flex items-center justify-center text-2xl">🖥</div>
+        <h4 class="font-bold text-navy-900 mb-2">Smart Classrooms</h4>
+        <p class="text-gray-500 text-sm">State-of-the-art multimedia rooms for immersive, interactive daily lectures with projectors and digital boards.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm card-hover reveal text-center">
+        <div class="w-14 h-14 mx-auto mb-4 bg-saffron-500/10 rounded-2xl flex items-center justify-center text-2xl">📖</div>
+        <h4 class="font-bold text-navy-900 mb-2">Resource Library</h4>
+        <p class="text-gray-500 text-sm">Curated collection of UPSC/MPPSC reference books, previous year papers, magazines, and a peaceful reading space.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm card-hover reveal text-center">
+        <div class="w-14 h-14 mx-auto mb-4 bg-navy-900/10 rounded-2xl flex items-center justify-center text-2xl">💻</div>
+        <h4 class="font-bold text-navy-900 mb-2">Computer Lab</h4>
+        <p class="text-gray-500 text-sm">Fully equipped lab for online practice tests, digital mock exams, current affairs research, and e-learning modules.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     NOTICE BOARD SECTION
+     WordPress: Replace static items with WP_Query loop
+     over custom post type 'sansthan_notice'
+═══════════════════════════════════════════ -->
+<section id="notices" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Header -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-10 gap-4 reveal">
+      <div>
+        <span class="inline-block bg-red-500/10 text-red-600 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-3">Live Updates</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-navy-900">Notice Board</h2>
+        <p class="text-gray-500 text-sm mt-1">Stay updated with the latest circulars, exam schedules, and announcements.</p>
+      </div>
+      <div class="flex items-center gap-2 text-sm text-gray-500">
+        <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse inline-block"></span> Auto-updated daily
+      </div>
+    </div>
+
+    <!-- Notice Items -->
+    <!-- WordPress: <?php while ( $notices_query->have_posts() ) : $notices_query->the_post(); ?> -->
+    <div class="space-y-4">
+
+      <!-- Notice Item 1 -->
+      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5 flex flex-col sm:flex-row gap-4 items-start card-hover reveal">
+        <div class="shrink-0 text-center bg-navy-900 text-white rounded-xl px-4 py-3 min-w-[64px]">
+          <div class="text-saffron-400 text-xs font-semibold uppercase">Jun</div>
+          <div class="text-2xl font-black leading-none">19</div>
+          <div class="text-gray-400 text-xs">2026</div>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-wrap gap-2 mb-1.5">
+            <span class="inline-block bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">New</span>
+            <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-medium px-2 py-0.5 rounded-full">UPSC/MPPSC</span>
+          </div>
+          <h4 class="font-bold text-navy-900 text-base mb-1">Admission Notice: Civil Services Batch 2026–27</h4>
+          <p class="text-gray-500 text-sm leading-relaxed line-clamp-2">Applications are now open for the Annual Civil Services Specialization Batch. Students from EWS category and merit holders are especially encouraged to apply. Last date: 30 June 2026.</p>
+        </div>
+        <div class="shrink-0 self-center">
+          <!-- WordPress: <?php the_field('pdf_circular_link'); ?> -->
+          <a href="#" class="inline-flex items-center gap-2 px-4 py-2 bg-navy-900 hover:bg-navy-800 text-white text-sm font-semibold rounded-xl transition-colors whitespace-nowrap">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download Official PDF Circular
+          </a>
+        </div>
+      </div>
+
+      <!-- Notice Item 2 -->
+      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5 flex flex-col sm:flex-row gap-4 items-start card-hover reveal">
+        <div class="shrink-0 text-center bg-saffron-500 text-navy-950 rounded-xl px-4 py-3 min-w-[64px]">
+          <div class="text-navy-900 text-xs font-semibold uppercase">Jun</div>
+          <div class="text-2xl font-black leading-none">19</div>
+          <div class="text-navy-700 text-xs">2026</div>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-wrap gap-2 mb-1.5">
+            <span class="inline-block bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">New</span>
+            <span class="inline-block bg-saffron-500/20 text-saffron-600 text-xs font-medium px-2 py-0.5 rounded-full">Banking · SSC · Police</span>
+          </div>
+          <h4 class="font-bold text-navy-900 text-base mb-1">Admission Notice: One-Day Exams Batch 2026–27</h4>
+          <p class="text-gray-500 text-sm leading-relaxed line-clamp-2">50 seats available for students targeting IBPS, SBI, SSC, MP Police, and Patwari recruitment exams. Completely free coaching. Walk-in registration accepted at the institute premises.</p>
+        </div>
+        <div class="shrink-0 self-center">
+          <a href="#" class="inline-flex items-center gap-2 px-4 py-2 bg-navy-900 hover:bg-navy-800 text-white text-sm font-semibold rounded-xl transition-colors whitespace-nowrap">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download Official PDF Circular
+          </a>
+        </div>
+      </div>
+
+      <!-- Notice Item 3 -->
+      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5 flex flex-col sm:flex-row gap-4 items-start card-hover reveal">
+        <div class="shrink-0 text-center bg-navy-900 text-white rounded-xl px-4 py-3 min-w-[64px]">
+          <div class="text-saffron-400 text-xs font-semibold uppercase">Jun</div>
+          <div class="text-2xl font-black leading-none">28</div>
+          <div class="text-gray-400 text-xs">2026</div>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-wrap gap-2 mb-1.5">
+            <span class="inline-block bg-green-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">Event</span>
+            <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-medium px-2 py-0.5 rounded-full">Guest Lecture</span>
+          </div>
+          <h4 class="font-bold text-navy-900 text-base mb-1">Interactive Session with Senior IAS Officer — 28 June 2026</h4>
+          <p class="text-gray-500 text-sm leading-relaxed line-clamp-2">An exclusive interactive Q&amp;A and motivational session with a senior IAS officer will be held on 28 June 2026 at 10:00 AM at the institute. All enrolled students must attend.</p>
+        </div>
+        <div class="shrink-0 self-center">
+          <a href="#" class="inline-flex items-center gap-2 px-4 py-2 bg-navy-900 hover:bg-navy-800 text-white text-sm font-semibold rounded-xl transition-colors whitespace-nowrap">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download Official PDF Circular
+          </a>
+        </div>
+      </div>
+
+      <!-- Notice Item 4 -->
+      <div class="bg-gray-50 border border-gray-100 rounded-2xl p-5 flex flex-col sm:flex-row gap-4 items-start card-hover reveal">
+        <div class="shrink-0 text-center bg-navy-900 text-white rounded-xl px-4 py-3 min-w-[64px]">
+          <div class="text-saffron-400 text-xs font-semibold uppercase">Jul</div>
+          <div class="text-2xl font-black leading-none">01</div>
+          <div class="text-gray-400 text-xs">2026</div>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex flex-wrap gap-2 mb-1.5">
+            <span class="inline-block bg-blue-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">Test</span>
+            <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-medium px-2 py-0.5 rounded-full">Mock Test Series</span>
+          </div>
+          <h4 class="font-bold text-navy-900 text-base mb-1">Weekly Mock Test Series Commencing 1 July 2026</h4>
+          <p class="text-gray-500 text-sm leading-relaxed line-clamp-2">The first mock test of the 2026–27 session will be conducted on 1 July 2026. Students must register by 25 June. Detailed syllabus and pattern notice attached.</p>
+        </div>
+        <div class="shrink-0 self-center">
+          <a href="#" class="inline-flex items-center gap-2 px-4 py-2 bg-navy-900 hover:bg-navy-800 text-white text-sm font-semibold rounded-xl transition-colors whitespace-nowrap">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            Download Official PDF Circular
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <!-- WordPress: <?php endwhile; wp_reset_postdata(); ?> -->
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     REGISTRATION FORM SECTION
+     WordPress: Replace with WPForms or CF7 shortcode,
+     or inject custom PHP form handler here
+═══════════════════════════════════════════ -->
+<section id="register" class="py-20 bg-navy-900 relative overflow-hidden">
+  <!-- Background decoration -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute top-0 right-0 w-96 h-96 bg-saffron-500/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-80 h-80 bg-blue-600/5 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Header -->
+    <div class="text-center mb-10 reveal">
+      <span class="inline-block bg-saffron-500/20 text-saffron-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">निःशुल्क प्रवेश · 100% Free Admission</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-white mb-2">
+        प्रवेश आवेदन पत्र
+      </h2>
+      <p class="text-saffron-300 font-medium mb-1">Student Registration Form</p>
+      <p class="text-gray-400 text-sm max-w-xl mx-auto">नीचे दिया गया फॉर्म भरें। हमारी टीम 24 घंटे में WhatsApp पर संपर्क करेगी।<br/><span class="text-gray-500">Fill the form below. Our team will contact you on WhatsApp within 24 hours.</span></p>
+    </div>
+
+    <!-- Form Card -->
+    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden reveal">
+
+      <!-- Form Header Strip -->
+      <div class="bg-navy-950 px-8 py-4 flex items-center justify-between">
+        <div class="text-white text-sm font-semibold">समुत्कर्ष संस्थान, भोपाल &nbsp;·&nbsp; <span class="text-saffron-400">Samutkarsh Sansthan, Bhopal</span></div>
+        <div class="text-gray-400 text-xs">सत्र / Session: 2026–27</div>
+      </div>
+
+      <form id="registration-form" onsubmit="handleSubmit(event)" novalidate class="p-6 sm:p-10">
+        <input type="hidden" name="form_type" value="student_registration" />
+        <!-- WordPress: <?php wp_nonce_field('sansthan_register', 'sansthan_nonce'); ?> -->
+
+        <!-- ── Section 1: Personal Details ── -->
+        <div class="mb-8">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-7 h-7 rounded-full bg-navy-900 text-white flex items-center justify-center text-xs font-black shrink-0">1</div>
+            <h3 class="font-black text-navy-900 text-base">व्यक्तिगत विवरण <span class="text-gray-400 font-normal text-sm ml-1">/ Personal Details</span></h3>
+            <div class="flex-1 h-px bg-gray-100"></div>
+          </div>
+
+          <!-- Student Name -->
+          <div class="mb-5">
+            <label for="student_name" class="block mb-1.5">
+              <span class="text-sm font-bold text-gray-800">विद्यार्थी का नाम</span>
+              <span class="text-gray-400 text-xs font-normal ml-1">/ Student's Full Name</span>
+              <span class="text-red-500 ml-0.5">*</span>
+            </label>
+            <input type="text" id="student_name" name="student_name" required
+              placeholder="जैसे: राहुल कुमार शर्मा / e.g. Rahul Kumar Sharma"
+              class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 focus:border-saffron-500 transition-colors bg-gray-50" />
+          </div>
+
+          <!-- DOB + Gender -->
+          <div class="grid sm:grid-cols-2 gap-5 mb-5">
+            <div>
+              <label for="dob" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800">जन्म दिनांक</span>
+                <span class="text-gray-400 text-xs font-normal ml-1">/ Date of Birth</span>
+                <span class="text-red-500 ml-0.5">*</span>
+              </label>
+              <input type="date" id="dob" name="dob" required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 focus:border-saffron-500 transition-colors bg-gray-50" />
+            </div>
+            <div>
+              <label for="gender" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800">लिंग</span>
+                <span class="text-gray-400 text-xs font-normal ml-1">/ Gender</span>
+                <span class="text-red-500 ml-0.5">*</span>
+              </label>
+              <select id="gender" name="gender" required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 focus:border-saffron-500 transition-colors bg-gray-50 appearance-none">
+                <option value="" disabled selected>— चुनें / Select —</option>
+                <option value="male">पुरुष / Male</option>
+                <option value="female">महिला / Female</option>
+                <option value="other">अन्य / Other</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Caste -->
+          <div class="mb-5">
+            <label for="caste" class="block mb-1.5">
+              <span class="text-sm font-bold text-gray-800">जाति वर्ग</span>
+              <span class="text-gray-400 text-xs font-normal ml-1">/ Caste Category</span>
+              <span class="text-red-500 ml-0.5">*</span>
+            </label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              <label class="caste-opt flex items-center gap-2.5 border border-gray-200 rounded-xl px-4 py-3 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50 has-[:checked]:border-saffron-500 has-[:checked]:bg-saffron-50">
+                <input type="radio" name="caste" value="UR" required class="accent-saffron-500" />
+                <span class="text-sm font-semibold text-gray-700">UR <span class="text-gray-400 font-normal text-xs block">सामान्य</span></span>
+              </label>
+              <label class="caste-opt flex items-center gap-2.5 border border-gray-200 rounded-xl px-4 py-3 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50 has-[:checked]:border-saffron-500 has-[:checked]:bg-saffron-50">
+                <input type="radio" name="caste" value="OBC" class="accent-saffron-500" />
+                <span class="text-sm font-semibold text-gray-700">OBC <span class="text-gray-400 font-normal text-xs block">अन्य पिछड़ा</span></span>
+              </label>
+              <label class="caste-opt flex items-center gap-2.5 border border-gray-200 rounded-xl px-4 py-3 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50 has-[:checked]:border-saffron-500 has-[:checked]:bg-saffron-50">
+                <input type="radio" name="caste" value="SC" class="accent-saffron-500" />
+                <span class="text-sm font-semibold text-gray-700">SC <span class="text-gray-400 font-normal text-xs block">अनुसूचित जाति</span></span>
+              </label>
+              <label class="caste-opt flex items-center gap-2.5 border border-gray-200 rounded-xl px-4 py-3 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50 has-[:checked]:border-saffron-500 has-[:checked]:bg-saffron-50">
+                <input type="radio" name="caste" value="ST" class="accent-saffron-500" />
+                <span class="text-sm font-semibold text-gray-700">ST <span class="text-gray-400 font-normal text-xs block">अनुसूचित जनजाति</span></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Permanent Address -->
+          <div class="mb-1">
+            <label for="address" class="block mb-1.5">
+              <span class="text-sm font-bold text-gray-800">स्थायी पता</span>
+              <span class="text-gray-400 text-xs font-normal ml-1">/ Permanent Address</span>
+              <span class="text-red-500 ml-0.5">*</span>
+            </label>
+            <textarea id="address" name="address" required rows="3"
+              placeholder="मकान नं., मोहल्ला/कॉलोनी, जिला, राज्य, पिनकोड — जैसे: 45, हर्षवर्धन नगर, भोपाल, म.प्र. 462003"
+              class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 focus:border-saffron-500 transition-colors bg-gray-50 resize-none"></textarea>
+          </div>
+        </div>
+
+        <!-- ── Section 2: Contact Details ── -->
+        <div class="mb-8">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-7 h-7 rounded-full bg-navy-900 text-white flex items-center justify-center text-xs font-black shrink-0">2</div>
+            <h3 class="font-black text-navy-900 text-base">संपर्क विवरण <span class="text-gray-400 font-normal text-sm ml-1">/ Contact Details</span></h3>
+            <div class="flex-1 h-px bg-gray-100"></div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-5">
+            <!-- Mobile -->
+            <div>
+              <label for="mobile" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800">मोबाइल नंबर</span>
+                <span class="text-gray-400 text-xs font-normal ml-1">/ Mobile Number</span>
+                <span class="text-red-500 ml-0.5">*</span>
+              </label>
+              <div class="flex">
+                <span class="inline-flex items-center px-3 rounded-l-xl border border-r-0 border-gray-200 bg-gray-100 text-gray-500 text-sm font-semibold">+91</span>
+                <input type="tel" id="mobile" name="mobile" required pattern="[0-9]{10}" maxlength="10"
+                  placeholder="10 अंक / 10-digit"
+                  class="flex-1 px-4 py-3 border border-gray-200 rounded-r-xl text-sm placeholder-gray-400 focus:border-saffron-500 transition-colors bg-gray-50"
+                  oninput="this.value=this.value.replace(/\D/g,'')" />
+              </div>
+              <p class="text-xs text-gray-400 mt-1">WhatsApp पर सूचना भेजी जाएगी / Notifications sent via WhatsApp</p>
+            </div>
+            <!-- Email -->
+            <div>
+              <label for="email" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800">ईमेल पता</span>
+                <span class="text-gray-400 text-xs font-normal ml-1">/ Email Address</span>
+                <span class="text-red-500 ml-0.5">*</span>
+              </label>
+              <input type="email" id="email" name="email" required
+                placeholder="उदा. rahul@gmail.com"
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 focus:border-saffron-500 transition-colors bg-gray-50" />
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Section 3: Family Details ── -->
+        <div class="mb-8">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-7 h-7 rounded-full bg-navy-900 text-white flex items-center justify-center text-xs font-black shrink-0">3</div>
+            <h3 class="font-black text-navy-900 text-base">पारिवारिक विवरण <span class="text-gray-400 font-normal text-sm ml-1">/ Family Details</span></h3>
+            <div class="flex-1 h-px bg-gray-100"></div>
+          </div>
+
+          <!-- Father row -->
+          <div class="bg-navy-900/3 border border-navy-900/10 rounded-2xl p-5 mb-4">
+            <p class="text-xs font-bold text-navy-900 uppercase tracking-widest mb-4">पिता / Father</p>
+            <div class="grid sm:grid-cols-3 gap-4">
+              <div>
+                <label for="father_name" class="block mb-1.5">
+                  <span class="text-sm font-bold text-gray-800">पिता का नाम</span>
+                  <span class="text-gray-400 text-xs font-normal block">Father's Name</span>
+                  <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="father_name" name="father_name" required
+                  placeholder="पिता का पूरा नाम"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 focus:border-saffron-500 transition-colors bg-white" />
+              </div>
+              <div>
+                <label for="father_occupation" class="block mb-1.5">
+                  <span class="text-sm font-bold text-gray-800">पिता का व्यवसाय</span>
+                  <span class="text-gray-400 text-xs font-normal block">Father's Occupation</span>
+                  <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="father_occupation" name="father_occupation" required
+                  placeholder="जैसे: किसान, शिक्षक, व्यापारी"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 focus:border-saffron-500 transition-colors bg-white" />
+              </div>
+              <div>
+                <label for="father_income" class="block mb-1.5">
+                  <span class="text-sm font-bold text-gray-800">पिता की वार्षिक आय</span>
+                  <span class="text-gray-400 text-xs font-normal block">Father's Annual Income (₹)</span>
+                  <span class="text-red-500">*</span>
+                </label>
+                <select id="father_income" name="father_income" required
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 focus:border-saffron-500 transition-colors bg-white appearance-none">
+                  <option value="" disabled selected>— चुनें —</option>
+                  <option value="below_1L">₹1 लाख से कम / Below 1 Lakh</option>
+                  <option value="1L_2.5L">₹1–2.5 लाख</option>
+                  <option value="2.5L_5L">₹2.5–5 लाख</option>
+                  <option value="5L_8L">₹5–8 लाख</option>
+                  <option value="above_8L">₹8 लाख से अधिक / Above 8 Lakh</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mother row -->
+          <div class="bg-saffron-500/5 border border-saffron-500/15 rounded-2xl p-5">
+            <p class="text-xs font-bold text-saffron-600 uppercase tracking-widest mb-4">माता / Mother</p>
+            <div class="grid sm:grid-cols-3 gap-4">
+              <div>
+                <label for="mother_name" class="block mb-1.5">
+                  <span class="text-sm font-bold text-gray-800">माता का नाम</span>
+                  <span class="text-gray-400 text-xs font-normal block">Mother's Name</span>
+                  <span class="text-red-500">*</span>
+                </label>
+                <input type="text" id="mother_name" name="mother_name" required
+                  placeholder="माता का पूरा नाम"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 focus:border-saffron-500 transition-colors bg-white" />
+              </div>
+              <div>
+                <label for="mother_occupation" class="block mb-1.5">
+                  <span class="text-sm font-bold text-gray-800">माता का व्यवसाय</span>
+                  <span class="text-gray-400 text-xs font-normal block">Mother's Occupation</span>
+                </label>
+                <input type="text" id="mother_occupation" name="mother_occupation"
+                  placeholder="जैसे: गृहिणी, शिक्षिका"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 focus:border-saffron-500 transition-colors bg-white" />
+              </div>
+              <div>
+                <label for="mother_income" class="block mb-1.5">
+                  <span class="text-sm font-bold text-gray-800">माता की वार्षिक आय</span>
+                  <span class="text-gray-400 text-xs font-normal block">Mother's Annual Income (₹)</span>
+                </label>
+                <select id="mother_income" name="mother_income"
+                  class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 focus:border-saffron-500 transition-colors bg-white appearance-none">
+                  <option value="" selected>— चुनें / Select —</option>
+                  <option value="nil">शून्य / Nil (गृहिणी)</option>
+                  <option value="below_1L">₹1 लाख से कम / Below 1 Lakh</option>
+                  <option value="1L_2.5L">₹1–2.5 लाख</option>
+                  <option value="2.5L_5L">₹2.5–5 लाख</option>
+                  <option value="above_5L">₹5 लाख से अधिक / Above 5 Lakh</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Section 4: Academic & Exam Details ── -->
+        <div class="mb-8">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-7 h-7 rounded-full bg-navy-900 text-white flex items-center justify-center text-xs font-black shrink-0">4</div>
+            <h3 class="font-black text-navy-900 text-base">शैक्षणिक एवं परीक्षा विवरण <span class="text-gray-400 font-normal text-sm ml-1">/ Academic &amp; Exam Details</span></h3>
+            <div class="flex-1 h-px bg-gray-100"></div>
+          </div>
+
+          <!-- Current Qualification + Graduation Degree -->
+          <div class="grid sm:grid-cols-2 gap-5 mb-5">
+            <div>
+              <label for="qualification" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800">वर्तमान शैक्षणिक योग्यता</span>
+                <span class="text-gray-400 text-xs font-normal block">Current Educational Qualification</span>
+                <span class="text-red-500">*</span>
+              </label>
+              <select id="qualification" name="qualification" required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 focus:border-saffron-500 transition-colors bg-gray-50 appearance-none">
+                <option value="" disabled selected>— चुनें / Select —</option>
+                <option value="12th">12वीं / Intermediate</option>
+                <option value="grad_pursuing">स्नातक अध्ययनरत / Pursuing Graduation</option>
+                <option value="graduate">स्नातक / Graduate</option>
+                <option value="postgrad_pursuing">स्नातकोत्तर अध्ययनरत / Pursuing PG</option>
+                <option value="postgraduate">स्नातकोत्तर / Post-Graduate</option>
+              </select>
+            </div>
+            <div>
+              <label for="graduation_degree" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800">स्नातक की डिग्री</span>
+                <span class="text-gray-400 text-xs font-normal block">Graduation Degree (if applicable)</span>
+              </label>
+              <input type="text" id="graduation_degree" name="graduation_degree"
+                placeholder="जैसे: B.A., B.Sc., B.Com., B.Tech."
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 focus:border-saffron-500 transition-colors bg-gray-50" />
+            </div>
+          </div>
+
+          <!-- Exam Name + Medium -->
+          <div class="grid sm:grid-cols-2 gap-5">
+            <div>
+              <label for="exam_name" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800">प्रतियोगी परीक्षा का नाम</span>
+                <span class="text-gray-400 text-xs font-normal block">Target Competitive Exam</span>
+                <span class="text-red-500">*</span>
+              </label>
+              <select id="exam_name" name="exam_name" required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 focus:border-saffron-500 transition-colors bg-gray-50 appearance-none">
+                <option value="" disabled selected>— परीक्षा चुनें / Select Exam —</option>
+                <optgroup label="── Batch 1: Civil Services ──">
+                  <option value="upsc">UPSC (IAS / IPS / IFS)</option>
+                  <option value="mppsc">MPPSC (राज्य सेवा परीक्षा)</option>
+                  <option value="upsc_mppsc_both">UPSC + MPPSC दोनों / Both</option>
+                </optgroup>
+                <optgroup label="── Batch 2: One-Day Exams ──">
+                  <option value="ibps_po">IBPS PO / SBI PO</option>
+                  <option value="ibps_clerk">IBPS Clerk / SBI Clerk</option>
+                  <option value="ssc_cgl">SSC CGL</option>
+                  <option value="ssc_chsl">SSC CHSL / MTS</option>
+                  <option value="mp_police">MP Police Constable / SI</option>
+                  <option value="patwari">Patwari / Vyapam</option>
+                  <option value="other_one_day">अन्य / Other One-Day Exam</option>
+                </optgroup>
+              </select>
+            </div>
+            <div>
+              <label for="medium" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800">माध्यम</span>
+                <span class="text-gray-400 text-xs font-normal block">Preferred Medium of Study</span>
+                <span class="text-red-500">*</span>
+              </label>
+              <div class="grid grid-cols-2 gap-3 mt-1">
+                <label class="flex items-center gap-2.5 border border-gray-200 rounded-xl px-4 py-3 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50 has-[:checked]:border-saffron-500 has-[:checked]:bg-saffron-50">
+                  <input type="radio" name="medium" value="hindi" required class="accent-saffron-500" checked />
+                  <span class="text-sm font-semibold text-gray-700">हिंदी <span class="text-gray-400 font-normal text-xs block">Hindi</span></span>
+                </label>
+                <label class="flex items-center gap-2.5 border border-gray-200 rounded-xl px-4 py-3 cursor-pointer hover:border-saffron-400 transition-colors bg-gray-50 has-[:checked]:border-saffron-500 has-[:checked]:bg-saffron-50">
+                  <input type="radio" name="medium" value="english" class="accent-saffron-500" />
+                  <span class="text-sm font-semibold text-gray-700">English <span class="text-gray-400 font-normal text-xs block">अंग्रेजी</span></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Section 5: Declaration ── -->
+        <div class="mb-7">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-7 h-7 rounded-full bg-navy-900 text-white flex items-center justify-center text-xs font-black shrink-0">5</div>
+            <h3 class="font-black text-navy-900 text-base">घोषणा <span class="text-gray-400 font-normal text-sm ml-1">/ Declaration</span></h3>
+            <div class="flex-1 h-px bg-gray-100"></div>
+          </div>
+
+          <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5 mb-5">
+            <p class="text-gray-700 text-sm leading-relaxed mb-3">
+              <strong>घोषणा:</strong> मैं घोषणा करता/करती हूँ कि ऊपर दी गई समस्त जानकारी मेरी जानकारी और विश्वास के अनुसार सत्य एवं सही है। मुझे ज्ञात है कि यह कोचिंग कार्यक्रम पूर्णतः निःशुल्क है और किसी भी प्रकार का शुल्क देय नहीं है।
+            </p>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              <em>Declaration: I hereby declare that all information provided above is true and correct to the best of my knowledge and belief. I understand that this coaching programme is completely free and no fee of any kind is payable.</em>
+            </p>
+          </div>
+
+          <!-- Date + Place row -->
+          <div class="grid sm:grid-cols-2 gap-5 mb-5">
+            <div>
+              <label for="declaration_date" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800">दिनांक</span>
+                <span class="text-gray-400 text-xs font-normal ml-1">/ Date</span>
+                <span class="text-red-500 ml-0.5">*</span>
+              </label>
+              <input type="date" id="declaration_date" name="declaration_date" required
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm text-gray-700 focus:border-saffron-500 transition-colors bg-gray-50" />
+            </div>
+            <div>
+              <label for="declaration_place" class="block mb-1.5">
+                <span class="text-sm font-bold text-gray-800">स्थान</span>
+                <span class="text-gray-400 text-xs font-normal ml-1">/ Place</span>
+                <span class="text-red-500 ml-0.5">*</span>
+              </label>
+              <input type="text" id="declaration_place" name="declaration_place" required
+                placeholder="जैसे: भोपाल / e.g. Bhopal"
+                class="w-full px-4 py-3 border border-gray-200 rounded-xl text-sm placeholder-gray-400 focus:border-saffron-500 transition-colors bg-gray-50" />
+            </div>
+          </div>
+
+          <!-- Consent checkbox -->
+          <label class="flex items-start gap-3 cursor-pointer group">
+            <input type="checkbox" id="consent" name="consent" required class="mt-0.5 accent-saffron-500 w-4 h-4 shrink-0" />
+            <span class="text-sm text-gray-700 leading-relaxed group-hover:text-gray-900 transition-colors">
+              मैं उपरोक्त घोषणा से सहमत हूँ और पुष्टि करता/करती हूँ कि दी गई सभी जानकारी सत्य है।
+              <span class="text-gray-400 block text-xs mt-0.5">I agree to the above declaration and confirm that all information provided is accurate.</span>
+            </span>
+          </label>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" id="submit-btn"
+          class="w-full py-4 bg-navy-900 hover:bg-navy-800 text-white font-bold text-base rounded-xl transition-all shadow-lg hover:shadow-navy-900/30 active:scale-[0.98]">
+          आवेदन जमा करें / Submit Registration →
+        </button>
+
+        <!-- Success message -->
+        <div id="form-success" class="hidden mt-6 bg-green-50 border border-green-200 rounded-2xl p-5 text-center">
+          <div class="text-green-600 font-black text-lg mb-1">✅ आवेदन सफलतापूर्वक जमा हुआ!</div>
+          <p class="text-green-700 text-sm mb-1">Application Submitted Successfully!</p>
+          <p class="text-gray-500 text-xs">हमारी टीम 24 घंटे में आपके WhatsApp नंबर पर संपर्क करेगी।<br/>Our team will contact you on WhatsApp within 24 hours.</p>
+        </div>
+
+        <p class="text-center text-xs text-gray-400 mt-5">
+          🔒 आपकी जानकारी पूर्णतः सुरक्षित है और किसी के साथ साझा नहीं की जाएगी।<br/>
+          Your data is completely private and will never be shared.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACT SECTION
+═══════════════════════════════════════════ -->
+<section id="contact" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-12 reveal">
+      <span class="inline-block bg-navy-900/10 text-navy-900 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4">Get In Touch</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-navy-900 mb-3">Contact Us</h2>
+      <p class="text-gray-500 max-w-lg mx-auto">Our team is available to answer your queries about admission, batches, or the institute. Reach us through any of the channels below.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-10">
+
+      <!-- Address -->
+      <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm text-center card-hover reveal">
+        <div class="w-14 h-14 mx-auto mb-4 bg-navy-900/10 rounded-2xl flex items-center justify-center text-2xl">📍</div>
+        <h4 class="font-bold text-navy-900 mb-2">Our Location</h4>
+        <p class="text-gray-500 text-sm leading-relaxed">
+          Saraswati Vidya Pratishthan 'Pragyadeep'<br/>
+          Harshvardhan Nagar<br/>
+          <strong>Bhopal, Madhya Pradesh</strong>
+        </p>
+        <a href="https://maps.google.com/?q=Harshvardhan+Nagar+Bhopal" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block text-sm text-saffron-600 font-semibold hover:underline">
+          Get Directions →
+        </a>
+      </div>
+
+      <!-- Phone -->
+      <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm text-center card-hover reveal">
+        <div class="w-14 h-14 mx-auto mb-4 bg-saffron-500/10 rounded-2xl flex items-center justify-center text-2xl">📞</div>
+        <h4 class="font-bold text-navy-900 mb-2">Call / WhatsApp</h4>
+        <a href="tel:+918989229191" class="text-gray-600 text-sm block hover:text-navy-900 transition-colors">+91 89892 29191</a>
+        <p class="text-gray-400 text-xs mt-1">Mon–Sat, 9:00 AM – 6:00 PM</p>
+        <a href="https://wa.me/918989229191" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold rounded-xl transition-colors">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+
+      <!-- Email -->
+      <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm text-center card-hover reveal">
+        <div class="w-14 h-14 mx-auto mb-4 bg-navy-900/10 rounded-2xl flex items-center justify-center text-2xl">✉️</div>
+        <h4 class="font-bold text-navy-900 mb-2">Email Us</h4>
+        <a href="mailto:samutkarshsansthan@gmail.com" class="text-gray-600 text-sm block hover:text-navy-900 transition-colors break-all">samutkarshsansthan@gmail.com</a>
+        <p class="text-gray-400 text-xs mt-1">We respond within 24 hours</p>
+        <a href="mailto:samutkarshsansthan@gmail.com" class="mt-4 inline-block px-4 py-2 bg-navy-900 hover:bg-navy-800 text-white text-sm font-semibold rounded-xl transition-colors">
+          Send Email →
+        </a>
+      </div>
+    </div>
+
+    <!-- Map placeholder -->
+    <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden reveal" style="height: 280px;">
+      <!-- WordPress: Replace with Google Maps embed using ACF-stored coordinates -->
+      <iframe
+        title="Samutkarsh Sansthan Location"
+        src="https://maps.google.com/maps?q=Harshvardhan+Nagar,+Bhopal,+Madhya+Pradesh&output=embed&z=14"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer class="bg-navy-950 text-gray-400">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid md:grid-cols-3 gap-10 mb-10">
+
+      <!-- Brand column -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-full bg-saffron-500 flex items-center justify-center text-navy-900 font-black text-lg">स</div>
+          <div>
+            <div class="text-white font-bold text-sm">Samutkarsh Sansthan</div>
+            <div class="text-saffron-500 text-xs">स्वर्गीय अर्चना शुक्ला स्मृति</div>
+          </div>
+        </div>
+        <p class="text-sm leading-relaxed mb-4">
+          Free competitive exam coaching for meritorious and economically weaker students. Run by Vidya Bharati Madhya Bharat.
+        </p>
+        <div class="flex gap-3">
+          <!-- Social links — replace hrefs with actual pages -->
+          <a href="#" class="w-9 h-9 bg-white/10 hover:bg-saffron-500 hover:text-navy-950 text-gray-300 rounded-lg flex items-center justify-center transition-colors text-sm font-bold" title="Facebook">f</a>
+          <a href="#" class="w-9 h-9 bg-white/10 hover:bg-saffron-500 hover:text-navy-950 text-gray-300 rounded-lg flex items-center justify-center transition-colors text-sm font-bold" title="YouTube">▶</a>
+          <a href="https://wa.me/918989229191" class="w-9 h-9 bg-white/10 hover:bg-green-500 text-gray-300 rounded-lg flex items-center justify-center transition-colors text-xs font-bold" title="WhatsApp">WA</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h5 class="text-white font-bold text-sm mb-4 uppercase tracking-widest">Quick Links</h5>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#home"     class="hover:text-saffron-400 transition-colors">Home</a></li>
+          <li><a href="#about"    class="hover:text-saffron-400 transition-colors">About Us</a></li>
+          <li><a href="#courses"  class="hover:text-saffron-400 transition-colors">Courses &amp; Batches</a></li>
+          <li><a href="#notices"  class="hover:text-saffron-400 transition-colors">Notice Board</a></li>
+          <li><a href="#register" class="hover:text-saffron-400 transition-colors">Free Admission Registration</a></li>
+          <li><a href="#contact"  class="hover:text-saffron-400 transition-colors">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h5 class="text-white font-bold text-sm mb-4 uppercase tracking-widest">Contact Info</h5>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-2">
+            <span class="mt-0.5">📍</span>
+            <span>Saraswati Vidya Pratishthan 'Pragyadeep', Harshvardhan Nagar, Bhopal (M.P.)</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span>📞</span>
+            <a href="tel:+918989229191" class="hover:text-saffron-400 transition-colors">+91 89892 29191</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span>✉</span>
+            <a href="mailto:samutkarshsansthan@gmail.com" class="hover:text-saffron-400 transition-colors break-all">samutkarshsansthan@gmail.com</a>
+          </li>
+          <li class="flex items-center gap-2">
+            <span>🕒</span>
+            <span>Mon–Sat: 9:00 AM – 6:00 PM</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+      <span>© 2026 Samutkarsh Sansthan, Bhopal. Run by Vidya Bharati Madhya Bharat. All rights reserved.</span>
+      <span class="text-gray-600">Admission is 100% free. No fees of any kind are charged.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+═══════════════════════════════════════════ -->
+<script>
+  // ── Mobile nav toggle ──────────────────────
+  const navToggle   = document.getElementById('nav-toggle');
+  const mobileMenu  = document.getElementById('mobile-menu');
+  const iconOpen    = document.getElementById('icon-open');
+  const iconClose   = document.getElementById('icon-close');
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = mobileMenu.classList.toggle('open');
+    iconOpen.classList.toggle('hidden',  isOpen);
+    iconClose.classList.toggle('hidden', !isOpen);
+  });
+
+  // Close mobile menu when a link is clicked
+  mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('open');
+      iconOpen.classList.remove('hidden');
+      iconClose.classList.add('hidden');
+    });
+  });
+
+  // ── Active nav link on scroll ──────────────
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks  = document.querySelectorAll('.nav-link');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + entry.target.id);
+        });
+      }
+    });
+  }, { threshold: 0.35 });
+
+  sections.forEach(s => observer.observe(s));
+
+  // ── Scroll reveal ──────────────────────────
+  const revealEls = document.querySelectorAll('.reveal');
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  // ── Form handling ──────────────────────────
+  // WordPress: Replace this with AJAX form submission using wp_ajax hooks
+  // or the native WPForms/CF7 submission handler
+  function handleSubmit(e) {
+    e.preventDefault();
+    const form    = e.target;
+    const btn     = form.querySelector('button[type=submit]');
+    const success = document.getElementById('form-success');
+
+    // Basic validation
+    const phone = form.whatsapp.value;
+    if (phone.length !== 10) {
+      alert('Please enter a valid 10-digit WhatsApp number.');
+      return;
+    }
+    if (!form.consent.checked) {
+      alert('Please confirm the declaration before submitting.');
+      return;
+    }
+
+    // Simulate submission (replace with fetch() to WordPress REST API or PHP handler)
+    btn.disabled    = true;
+    btn.textContent = 'Submitting…';
+
+    setTimeout(() => {
+      form.reset();
+      btn.classList.add('hidden');
+      success.classList.remove('hidden');
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 1200);
+  }
+</script>
+
+</body>
+</html>
